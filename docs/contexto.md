@@ -1,13 +1,15 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+As bibliotecas desempenham um papel fundamental na disseminação do conhecimento, mas muitas delas ainda enfrentam desafios na organização de seus acervos e na gestão de empréstimos. Este projeto busca desenvolver um sistema para modernizar a administração de uma biblioteca, permitindo que alunos acessem, reservem e devolvam livros de forma prática e eficiente.
+
+A proposta visa eliminar processos manuais suscetíveis a erros, garantindo um melhor controle sobre os livros disponíveis e emprestados. Com um sistema digitalizado, torna-se possível acompanhar o histórico de empréstimos, evitar extravios e otimizar a experiência dos usuários. O foco principal são bibliotecas de instituições de ensino que precisam modernizar seus processos.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Cuidar de uma biblioteca sem um sistema adequado pode ser um verdadeiro caos. Sem um bom controle, livros acabam sumindo, é difícil encontrar títulos e as devoluções vivem atrasadas.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Sem automação, é comum que bibliotecas tenham registros bagunçados, dificultem a verificação de quais livros estão disponíveis e fiquem sem informações confiáveis sobre os usuários e seus empréstimos. Isso tudo atrapalha tanto a biblioteca quanto os alunos, que dependem dos livros para estudar e pesquisar.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+A solução é um sistema que centralize e organize tudo, automatizando o controle de empréstimos e devoluções. Com um banco de dados bem estruturado, fica mais fácil manter as informações seguras, reduzir erros e garantir um serviço muito mais eficiente para todo mundo. Com isso, será desenvolvido uma API que permitirá a integração com uma aplicação web quanto para um aplicativo mobile Android. Isso possibilitará que os usuários acessem o sistema de maneira flexível, seja através de seus navegadores em desktop ou por meio de dispositivos móveis, tornando o processo de consulta, reserva e devolução de livros ainda mais ágil e acessível, independentemente da plataforma.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -16,9 +18,13 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste projeto é desenvolver um software para solucionar os problemas relacionados à administração de bibliotecas, proporcionando uma maneira mais eficiente e prática de gerenciar o acervo e os empréstimos de livros. O sistema permitirá o controle automatizado de empréstimos, devoluções e reservas, além de garantir o acompanhamento em tempo real das condições do acervo e dos usuários.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+Objetivos específicos:
+
+Desenvolver uma API de integração para que tanto a aplicação web quanto o aplicativo mobile Android possam interagir de maneira eficiente, permitindo aos usuários realizar ações como consultar o acervo, reservar e devolver livros, independentemente da plataforma utilizada.
+
+Implementar um banco de dados robusto para armazenar as informações dos livros, usuários e transações de empréstimo, garantindo a integridade e a segurança dos dados, além de otimizar a consulta e atualização das informações no sistema.
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
