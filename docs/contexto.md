@@ -73,15 +73,25 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que os usuários realizem cadastro e login	 | ALTA | 
+|RF-002| Permitir que administradores cadastrem, editem e removam livros | ALTA | 
+|RF-003| Permitir pesquisa e consulta de livros disponíveis	   | ALTA |
+|RF-004| Permitir que usuários filtrem os livros por autor, gênero e disponibilidade		   | ALTA |
+|RF-005| Permitir reserva e renovação de livros online		   | ALTA |
+|RF-006| Disponibilizar histórico de empréstimos			   | MÉDIA |
+|RF-007| Notificar usuários sobre prazos de devolução		   | BAIXA |
+|RF-008| Emitir relatórios de uso da biblioteca			   | BAIXA |
+
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve garantir a segurança dos dados dos usuários	 | ALTA | 
+|RNF-002| A interface deve ser intuitiva e acessível para diferentes perfis de usuários	 |  MÉDIA | 
+|RNF-002| O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android		 |  ALTA | 
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
