@@ -31,14 +31,21 @@ Implementar um banco de dados robusto para armazenar as informações dos livros
 
 ## Justificativa
 
-____
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-____
 A escolha de desenvolver um sistema de gestão para bibliotecas digitais visa modernizar e otimizar o controle de empréstimos e devoluções de livros, resolvendo problemas comuns como extravios e registros manuais desorganizados. A aplicação será acessível tanto por meio de uma plataforma web quanto de um aplicativo mobile Android, proporcionando praticidade e flexibilidade aos usuários.
 
-A definição dos objetivos específicos foi motivada pela necessidade de garantir uma integração eficiente entre as plataformas por meio de uma API e a criação de um banco de dados seguro e estruturado, essencial para o bom funcionamento do sistema.
+Muitas bibliotecas ainda enfrentam dificuldades na organização do acervo, no controle de empréstimos e na atualização de seus materiais. Segundo o portal Sophia (2024), a desorganização e a falta de catalogação adequada são desafios recorrentes, dificultando o acesso dos usuários aos livros disponíveis. Além disso, a ausência de um sistema informatizado pode gerar atrasos e falhas na administração do acervo (ActiveSoft, 2024).
+
+Outro problema relevante é a falta de integração tecnológica nas bibliotecas, o que compromete a eficiência da gestão. Conforme estudo publicado na SciELO (2024), a implementação de bibliotecas digitais exige investimentos em infraestrutura e capacitação profissional, já que a adaptação a novas ferramentas tecnológicas é um desafio constante para bibliotecários (InterSaberes, 2024).
+
+A definição dos objetivos específicos foi motivada pela necessidade de garantir uma integração eficiente entre as plataformas por meio de uma API e a criação de um banco de dados seguro e estruturado, essencial para o bom funcionamento do sistema. Com um sistema digital bem planejado, espera-se não apenas facilitar o gerenciamento do acervo, mas também oferecer um serviço mais acessível e eficiente para alunos e instituições acadêmicas.
+
+## Referências  
+
+- *Sophia* (2024). [5 problemas em bibliotecas escolares e como resolvê-los](https://sophia.com.br/5-problemas-em-bibliotecas-escolares-e-como-resolve-los/?utm_source=chatgpt.com).  
+- *ActiveSoft* (2024). [Problemas com organização e gestão de sua biblioteca? Saiba como resolvê-los](https://activesoft.com.br/problemas-com-organizacao-e-gestao-de-sua-biblioteca-saiba-como-resolve-los/?utm_source=chatgpt.com).  
+- *SciELO* (2024). [Desafios na implementação de bibliotecas digitais](https://www.scielo.br/j/ci/a/Wb33LWZdjFTqxTrRhpDbwcp/?utm_source=chatgpt.com).  
+- *InterSaberes* (2024). [Biblioteca digital: desafios do bibliotecário](https://www.intersaberes.com/blog/biblioteca-digital-desafios-do-bibliotecario/?utm_source=chatgpt.com).  
+
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
