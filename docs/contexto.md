@@ -52,18 +52,151 @@ A definição dos objetivos específicos foi motivada pela necessidade de garant
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O sistema de gestão de bibliotecas foi pensado para atender a diferentes perfis de usuários, cada um com suas particularidades e necessidades. O objetivo é entender quem são essas pessoas, como elas interagem com a tecnologia e o que esperam do sistema.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+## 1. Alunos
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+* **Quem são:** Estudantes de ensino médio, graduação ou pós-graduação que frequentam a biblioteca para estudos, pesquisas e trabalhos acadêmicos.
+* **Idade:** Entre 15 e 30 anos, em sua maioria.
+* **Relacionamento com a tecnologia:** Jovens que estão familiarizados com smartphones, aplicativos e internet, mas nem todos têm conhecimentos técnicos avançados.
+* **O que precisam:**
+    * Encontrar livros de forma rápida e fácil.
+    * Reservar e renovar livros online, sem precisar ir até a biblioteca.
+    * Acompanhar prazos de devolução e receber lembretes.
+* **O que esperam:** Um sistema simples, ágil e que funcione bem tanto no computador quanto no celular.
+
+## 2. Professores e Pesquisadores
+
+* **Quem são:** Docentes e pesquisadores que utilizam a biblioteca para preparar aulas, orientar alunos e desenvolver pesquisas.
+* **Idade:** Entre 30 e 60 anos, com perfis variados.
+* **Relacionamento com a tecnologia:** Alguns são bastante familiarizados com ferramentas digitais, enquanto outros preferem soluções mais diretas e sem complicações.
+* **O que precisam:**
+    * Acesso a livros técnicos, artigos e materiais de referência.
+    * Renovar empréstimos sem burocracia.
+    * Encontrar materiais específicos com facilidade.
+* **O que esperam:** Um sistema confiável, que economize tempo e ofereça suporte para suas atividades acadêmicas.
+
+## 3. Funcionários da Biblioteca (Bibliotecários e Equipe)
+
+* **Quem são:** Profissionais responsáveis pela organização do acervo, empréstimos, devoluções e atendimento ao público.
+* **Idade:** Variada, mas muitos têm experiência consolidada na área.
+* **Relacionamento com a tecnologia:** Alguns têm familiaridade com sistemas digitais, mas outros podem preferir ferramentas mais simples e diretas.
+* **O que precisam:**
+    * Cadastrar, editar e remover livros do sistema.
+    * Controlar empréstimos e devoluções de forma eficiente.
+    * Gerar relatórios sobre o uso da biblioteca.
+* **O que esperam:** Um sistema que facilite o trabalho diário, reduza erros e agilize processos manuais.
+
+## 4. Gestores da Instituição
+
+* **Quem são:** Diretores, coordenadores e outros gestores responsáveis pela administração da instituição de ensino.
+* **Idade:** Geralmente acima de 40 anos.
+* **Relacionamento com a tecnologia:** Menos envolvidos no uso diário do sistema, mas interessados em dados e relatórios para tomada de decisões.
+* **O que precisam:**
+    * Acesso a informações sobre o uso da biblioteca (livros mais emprestados, frequência de usuários, etc.).
+    * Dados para planejar a aquisição de novos livros e recursos.
+* **O que esperam:** Um sistema que forneça métricas claras e ajude a melhorar a gestão da biblioteca.
+
+# Personas
+
+## Persona 1: Ana, Estudante de Graduação
+
+* **Idade:** 22 anos
+* **Perfil:** Ana está no terceiro ano de Letras e usa a biblioteca frequentemente para pegar livros de literatura e fazer pesquisas.
+* **Objetivo:** Encontrar livros rapidamente e renovar empréstimos sem precisar ir até a biblioteca.
+* **Frustrações:** Às vezes, os livros que ela precisa já estão emprestados, e ela não recebe avisos sobre disponibilidade.
+* **Necessidades:** Um sistema que permita reservar livros online e envie notificações sobre prazos de devolução.
+
+## Persona 2: Carlos, Professor de História
+
+* **Idade:** 48 anos
+* **Perfil:** Carlos é professor há 20 anos e usa a biblioteca para preparar aulas e orientar alunos.
+* **Objetivo:** Acessar livros técnicos e materiais de referência sem demora.
+* **Frustrações:** O processo manual de renovação de empréstimos é demorado e burocrático.
+* **Necessidades:** Um sistema que permita renovar empréstimos online e ofereça uma busca eficiente por materiais especializados.
+
+## Persona 3: Mariana, Bibliotecária
+
+* **Idade:** 52 anos
+* **Perfil:** Mariana trabalha na biblioteca há 15 anos e é responsável pela organização do acervo e pelos empréstimos.
+* **Objetivo:** Manter o acervo organizado e controlar empréstimos de forma eficiente.
+* **Frustrações:** Os processos manuais são propensos a erros e consomem muito tempo.
+* **Necessidades:** Um sistema que automatize tarefas repetitivas e facilite a gestão do acervo.
+
+# Mapa de Stakeholders
+
+É uma ferramenta visual que identifica grupos ou indivíduos com interesse no projeto, sua influência e como são impactados. No sistema de gestão de bibliotecas, ele é crucial para considerar as necessidades de todos durante o desenvolvimento e implementação, garantindo que o sistema atenda a alunos, professores, bibliotecários, gestores e equipe de TI de forma eficiente.
+
+| Stakeholder             | Interesse                                                        | Influência |
+| :---------------------- | :--------------------------------------------------------------- | :--------- |
+| Alunos                  | Acesso rápido a livros e facilidade em empréstimos/reservas.     | Alta       |
+| Professores             | Acesso a materiais especializados e renovação de empréstimos. | Média      |
+| Bibliotecários          | Controle eficiente do acervo e automação de processos.             | Alta       |
+| Gestores da Instituição | Relatórios de uso e melhoria na gestão de recursos.                 | Média      |
+| Desenvolvedores         | Criar um sistema funcional e fácil de manter.                 | Alta       |
 
 # Especificações do Projeto
+
+### Requisitos
+
+As tabelas a seguir detalham os requisitos funcionais e não funcionais do projeto. A priorização dos requisitos foi realizada utilizando a técnica de MoSCoW, classificando-os em:
+
+* **Deve ter:** Requisitos essenciais para o funcionamento básico do sistema.
+* **Deveria ter:** Requisitos importantes, mas não críticos para o lançamento inicial.
+* **Poderia ter:** Requisitos desejáveis, que podem ser implementados em futuras versões.
+* **Não terá:** Requisitos que não serão implementados neste momento.
+
+#### Requisitos Funcionais
+
+| ID      | Descrição do Requisito                                     | Prioridade  |
+| :------ | :------------------------------------------------------- | :---------- |
+| RF-001  | Permitir que os usuários realizem cadastro e login       | Deve ter   |
+| RF-002  | Permitir que administradores cadastrem, editem e removam livros | Deve ter   |
+| RF-003  | Permitir pesquisa e consulta de livros disponíveis        | Deve ter   |
+| RF-004  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade | Deveria ter  |
+| RF-005  | Permitir reserva e renovação de livros online            | Deve ter   |
+| RF-006  | Disponibilizar histórico de empréstimos                   | Deveria ter  |
+| RF-007  | Notificar usuários sobre prazos de devolução              | Poderia ter |
+| RF-008  | Emitir relatórios de uso da biblioteca                  | Poderia ter |
+
+#### Requisitos não Funcionais
+
+| ID      | Descrição do Requisito                                  | Prioridade  |
+| :------ | :---------------------------------------------------- | :---------- |
+| RNF-001 | O sistema deve garantir a segurança dos dados dos usuários | Deve ter   |
+| RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários | Deveria ter  |
+| RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android | Deve ter   |
+
+### Restrições
+
+| ID  | Restrição                                   |
+| :-- | :------------------------------------------ |
+| 01  | O projeto deverá ser entregue até o final do semestre |
+| 02  | Não pode ser desenvolvido um módulo de backend. |
+
+### Catálogo de Serviços
+
+* **Cadastro e Login:** Permite que usuários e administradores acessem o sistema de forma segura.
+* **Gerenciamento de Acervo:** Funcionalidades para adicionar, editar e remover livros do acervo.
+* **Pesquisa e Consulta:** Ferramentas para encontrar livros por título, autor, gênero e disponibilidade.
+* **Reserva e Renovação:** Permite que usuários reservem e renovem livros online.
+* **Histórico de Empréstimos:** Registro de todos os empréstimos realizados por cada usuário.
+* **Notificações:** Alertas sobre prazos de devolução e outras informações relevantes.
+* **Relatórios:** Geração de relatórios sobre o uso da biblioteca.
+
+### Arquitetura da Solução
+
+* A solução será desenvolvida utilizando uma arquitetura de API, permitindo a integração com aplicações web e mobile.
+* O banco de dados será responsável por armazenar todas as informações do sistema, como livros, usuários e empréstimos.
+* O sistema sera consumido por um Aplicativo android e uma aplicação web.
+
+### Tecnologias Utilizadas
+
+* Linguagem de programação para a API: A Definir
+* Banco de dados: A Definir
+* Framework para desenvolvimento web: A Definir
+* Ferramentas de desenvolvimento: Git, IDE de desenvolvimento (ex: Visual Studio Code).
+
 
 ## Requisitos
 
