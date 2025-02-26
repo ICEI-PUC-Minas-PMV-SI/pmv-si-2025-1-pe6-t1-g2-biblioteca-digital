@@ -166,6 +166,10 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 | RNF-001 | O sistema deve garantir a segurança dos dados dos usuários | Deve ter   |
 | RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários | Deveria ter  |
 | RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android | Deve ter   |
+| RNF-004 | O sistema deverá ser desenvolvido em Python | Deve ter   |
+| RNF-005 | O sistema deverá se comunicar com o SQLite | Deve ter   |
+| RNF-006 | O sistema deverá deverá atender às normas legais, tais como padrões, leis, etc. | Deve ter   |
+
 
 ## Restrições
 
@@ -175,6 +179,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
