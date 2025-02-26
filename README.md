@@ -10,11 +10,11 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Eduardo Henrique Morais Costa1 
-* Eric Henrique Marques dos Santos2 
-* Jeziel Suzana Pires da Silva3
-* Júlio dos Reis Firmino4 
-* Victor Hugo Carvalho de Almeida6
+* Eduardo Henrique Morais Costa
+* Eric Henrique Marques dos Santos
+* Jeziel Suzana Pires da Silva
+* Júlio dos Reis Firmino
+* Victor Hugo Carvalho de Almeida
 
 ## Orientador
 
