@@ -135,7 +135,7 @@ O sistema de gestão de bibliotecas foi pensado para atender a diferentes perfis
 | Gestores da Instituição | Relatórios de uso e melhoria na gestão de recursos.                 | Média      |
 | Desenvolvedores         | Criar um sistema funcional e fácil de manter.                 | Alta       |
 
-# Especificações do Projeto
+## Especificações do Projeto
 
 ### Requisitos
 
@@ -167,80 +167,6 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 | RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários | Deveria ter  |
 | RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android | Deve ter   |
 
-### Restrições
-
-| ID  | Restrição                                   |
-| :-- | :------------------------------------------ |
-| 01  | O projeto deverá ser entregue até o final do semestre |
-| 02  | Não pode ser desenvolvido um módulo de backend. |
-
-### Catálogo de Serviços
-
-* **Cadastro e Login:** Permite que usuários e administradores acessem o sistema de forma segura.
-* **Gerenciamento de Acervo:** Funcionalidades para adicionar, editar e remover livros do acervo.
-* **Pesquisa e Consulta:** Ferramentas para encontrar livros por título, autor, gênero e disponibilidade.
-* **Reserva e Renovação:** Permite que usuários reservem e renovem livros online.
-* **Histórico de Empréstimos:** Registro de todos os empréstimos realizados por cada usuário.
-* **Notificações:** Alertas sobre prazos de devolução e outras informações relevantes.
-* **Relatórios:** Geração de relatórios sobre o uso da biblioteca.
-
-### Arquitetura da Solução
-
-* A solução será desenvolvida utilizando uma arquitetura de API, permitindo a integração com aplicações web e mobile.
-* O banco de dados será responsável por armazenar todas as informações do sistema, como livros, usuários e empréstimos.
-* O sistema sera consumido por um Aplicativo android e uma aplicação web.
-
-### Tecnologias Utilizadas
-
-* Linguagem de programação para a API: A Definir
-* Banco de dados: A Definir
-* Framework para desenvolvimento web: A Definir
-* Ferramentas de desenvolvimento: Git, IDE de desenvolvimento (ex: Visual Studio Code).
-
-
-## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
-
-### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que os usuários realizem cadastro e login	 | ALTA | 
-|RF-002| Permitir que administradores cadastrem, editem e removam livros | ALTA | 
-|RF-003| Permitir pesquisa e consulta de livros disponíveis	   | ALTA |
-|RF-004| Permitir que usuários filtrem os livros por autor, gênero e disponibilidade		   | ALTA |
-|RF-005| Permitir reserva e renovação de livros online		   | ALTA |
-|RF-006| Disponibilizar histórico de empréstimos			   | MÉDIA |
-|RF-007| Notificar usuários sobre prazos de devolução		   | BAIXA |
-|RF-008| Emitir relatórios de uso da biblioteca			   | BAIXA |
-
-
-
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve garantir a segurança dos dados dos usuários	 | ALTA | 
-|RNF-002| A interface deve ser intuitiva e acessível para diferentes perfis de usuários	 |  MÉDIA | 
-|RNF-002| O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android		 |  ALTA | 
-
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -259,6 +185,14 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 # Catálogo de Serviços
 
 Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+
+* **Cadastro e Login:** Permite que usuários e administradores acessem o sistema de forma segura.
+* **Gerenciamento de Acervo:** Funcionalidades para adicionar, editar e remover livros do acervo.
+* **Pesquisa e Consulta:** Ferramentas para encontrar livros por título, autor, gênero e disponibilidade.
+* **Reserva e Renovação:** Permite que usuários reservem e renovem livros online.
+* **Histórico de Empréstimos:** Registro de todos os empréstimos realizados por cada usuário.
+* **Notificações:** Alertas sobre prazos de devolução e outras informações relevantes.
+* **Relatórios:** Geração de relatórios sobre o uso da biblioteca.
 
 # Arquitetura da Solução
 
