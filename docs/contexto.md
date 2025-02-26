@@ -198,7 +198,7 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "500px">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "650px">
 
 ## Tecnologias Utilizadas
 
