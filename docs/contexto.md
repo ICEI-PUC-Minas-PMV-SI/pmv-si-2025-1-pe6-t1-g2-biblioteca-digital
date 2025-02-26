@@ -150,24 +150,24 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 
 | ID      | Descrição do Requisito                                     | Prioridade  |
 | :------ | :------------------------------------------------------- | :---------- |
-| RF-001  | Permitir que os usuários realizem cadastro e login       | Deve ter   |
-| RF-002  | Permitir que administradores cadastrem, editem e removam livros | Deve ter   |
-| RF-003  | Permitir pesquisa e consulta de livros disponíveis        | Deve ter   |
-| RF-004  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade | Deveria ter  |
-| RF-005  | Permitir reserva e renovação de livros online            | Deve ter   |
-| RF-006  | Disponibilizar histórico de empréstimos                   | Deveria ter  |
-| RF-007  | Notificar usuários sobre prazos de devolução              | Poderia ter |
-| RF-008  | Emitir relatórios de uso da biblioteca                  | Poderia ter |
+| RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |
+| RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |
+| RF-003  | Permitir pesquisa e consulta de livros disponíveis.        | Deve ter   |
+| RF-004  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |
+| RF-005  | Permitir reserva e renovação de livros online.            | Deve ter   |
+| RF-006  | Disponibilizar histórico de empréstimos.                   | Deveria ter  |
+| RF-007  | Notificar usuários sobre prazos de devolução.              | Poderia ter |
+| RF-008  | Emitir relatórios de uso da biblioteca.                  | Poderia ter |
 
 #### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                  | Prioridade  |
 | :------ | :---------------------------------------------------- | :---------- |
-| RNF-001 | O sistema deve garantir a segurança dos dados dos usuários | Deve ter   |
-| RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários | Deveria ter  |
-| RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android | Deve ter   |
-| RNF-004 | O sistema deverá ser desenvolvido em Python | Deve ter   |
-| RNF-005 | O sistema deverá se comunicar com o SQLite | Deve ter   |
+| RNF-001 | O sistema deve garantir a segurança dos dados dos usuários. | Deve ter   |
+| RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários. | Deveria ter  |
+| RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android. | Deve ter   |
+| RNF-004 | O sistema deverá ser desenvolvido em Python. | Deve ter   |
+| RNF-005 | O sistema deverá se comunicar com o SQLite. | Deve ter   |
 | RNF-006 | O sistema deverá deverá atender às normas legais, tais como padrões, leis, etc. | Deve ter   |
 
 
@@ -208,13 +208,13 @@ A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, tod
 ## Vantagens da Arquitetura Monolítica
 
 * **Estruturação simplificada:** Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
-* **Poucos recursos tecnológicos:** Mariana trabalha na biblioteca há 15 anos e é responsável pela organização do acervo e pelos empréstimos.
+* **Implantação:** A implantação de aplicações monolíticas é mais simples do que a implantação de microsserviços. Os desenvolvedores instalam toda a base de código da aplicação e as dependências em um único ambiente.
 * **Baixa integração:** Não há necessidade de realizar integração entre módulos distintos dentro do mesmo sistema, tais “integrações” são feitas dentro do código-fonte.
 
 ## Desvantagens da Arquitetura Monolítica
-* **Manutenção:** A aplicação se torna cada vez maior, o que faz com que seja implementado uma maior complexidade a estrutura do código com passar do tempo. Pequenas alterações e correções podem demandar um grande esforço pois todo o código deverá ser novamente implantado no servidor.
-* **Linha de código:** Um erro no código pode quebrar todo o sistema fazendo com que o mesmo fique inoperante.
-* **Difícil de escalonar:** Por ser uma aplicação única, o escalonamento só pode ser feito do sistema como um todo, isso significa, que o processo fica mais difícil e custoso.
+* **Manutenção:** A aplicação se torna cada vez maior, o que faz com que seja implementado uma maior complexidade a estrutura do código com passar do tempo. Pequenas alterações e correções podem demandar um grande esforço pois todo o código deverá ser novamente testado e reimplantado no servidor.
+* **Linha de código:** Um pequeno erro no código fonte pode fazer com que todo o sistema fique inoperante. Tais incidentes têm o potencial de causar interrupções graves no serviço e afetar todos os usuários ativos.
+* **Difícil de escalonar:** As aplicações monolíticas enfrentam vários desafios à medida que se expandem. Como a arquitetura contém todas as funcionalidades em uma única base de código, isso faz com que, toda a aplicação deva ser escalada conforme os requisitos mudam.
 
 ## Tecnologias Utilizadas
 
