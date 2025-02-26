@@ -200,7 +200,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
 
-![arq]([https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png))
+![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png)
 
 
 
