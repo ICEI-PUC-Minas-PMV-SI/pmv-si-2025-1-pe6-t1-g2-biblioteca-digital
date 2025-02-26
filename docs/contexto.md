@@ -212,7 +212,7 @@ A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, tod
 * **Baixa integração:** Não há necessidade de realizar integração entre módulos distintos dentro do mesmo sistema, tais “integrações” são feitas dentro do código-fonte.
 
 ## Desvantagens da Arquitetura Monolítica
-* **Manutenção:** A aplicação se torna cada vez maior, a estrutura do código fica mais desafiadora com passar do tempo alem do desafio de fazer alterações rápidas e ter que subir para o servidor.
+* **Manutenção:** A aplicação se torna cada vez maior, o que faz com que seja implementado uma maior complexidade a estrutura do código com passar do tempo. Pequenas alterações e correções podem demandar um grande esforço pois todo o código deverá ser novamente implantado no servidor.
 * **Linha de código:** Um erro no código pode quebrar todo o sistema fazendo com que o mesmo fique inoperante.
 * **Difícil de escalonar:** Por ser uma aplicação única, o escalonamento só pode ser feito do sistema como um todo, isso significa, que o processo fica mais difícil e custoso.
 
