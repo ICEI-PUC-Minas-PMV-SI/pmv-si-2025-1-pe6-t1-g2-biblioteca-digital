@@ -201,9 +201,20 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, todas as funções estão em um único pacote a ser distribuído ao cliente. Sua principal característica é acoplamento de módulos de diferentes abordagens, ou seja, é possível acessar código de módulos distintos minimizando as integrações entre os módulos.
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "800px">
+
+## Vantagens da Arquitetura Monolítica
+
+* **Estruturação simplificada:** Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
+* **Poucos recursos tecnológicos:** Mariana trabalha na biblioteca há 15 anos e é responsável pela organização do acervo e pelos empréstimos.
+* **Baixa integração:** Não há necessidade de realizar integração entre módulos distintos dentro do mesmo sistema, tais “integrações” são feitas dentro do código-fonte.
+
+## Desvantagens da Arquitetura Monolítica
+* **Manutenção:** A aplicação se torna cada vez maior, a estrutura do código fica mais desafiadora com passar do tempo alem do desafio de fazer alterações rápidas e ter que subir para o servidor.
+* **Linha de código:** Um erro no código pode quebrar todo o sistema fazendo com que o mesmo fique inoperante.
+* **Difícil de escalonar:** Por ser uma aplicação única, o escalonamento só pode ser feito do sistema como um todo, isso significa, que o processo fica mais difícil e custoso.
 
 ## Tecnologias Utilizadas
 
