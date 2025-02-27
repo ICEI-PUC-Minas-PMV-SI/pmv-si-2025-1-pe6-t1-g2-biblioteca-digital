@@ -203,7 +203,7 @@ Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, d
 
 A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, todas as funções estão em um único pacote a ser distribuído ao cliente. Sua principal característica é acoplamento de módulos de diferentes abordagens, ou seja, é possível acessar código de módulos distintos minimizando a necessidade de integrações.
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "100%">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "90%">
 
 ## Vantagens da Arquitetura Monolítica
 
