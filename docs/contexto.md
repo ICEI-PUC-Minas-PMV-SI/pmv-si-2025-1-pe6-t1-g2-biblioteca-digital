@@ -153,8 +153,8 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 | RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |
 | RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |
 | RF-003  | Permitir pesquisa e consulta de livros disponíveis.        | Deve ter   |
-| RF-004  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |
-| RF-005  | Permitir reserva e renovação de livros online.            | Deve ter   |
+| RF-004  | Permitir reserva e renovação de livros online.            | Deve ter   |
+| RF-005  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |
 | RF-006  | Disponibilizar histórico de empréstimos.                   | Deveria ter  |
 | RF-007  | Notificar usuários sobre prazos de devolução.              | Poderia ter |
 | RF-008  | Emitir relatórios de uso da biblioteca.                  | Poderia ter |
@@ -164,11 +164,11 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 | ID      | Descrição do Requisito                                  | Prioridade  |
 | :------ | :---------------------------------------------------- | :---------- |
 | RNF-001 | O sistema deve garantir a segurança dos dados dos usuários. | Deve ter   |
-| RNF-002 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários. | Deveria ter  |
-| RNF-003 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android. | Deve ter   |
-| RNF-004 | O sistema deverá ser desenvolvido em Python. | Deve ter   |
-| RNF-005 | O sistema deverá se comunicar com o SQLite. | Deve ter   |
-| RNF-006 | O sistema deverá deverá atender às normas legais, tais como padrões, leis, etc. | Deve ter   |
+| RNF-002 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android. | Deve ter   |
+| RNF-003 | O sistema deverá ser desenvolvido em Python. | Deve ter   |
+| RNF-004 | O sistema deverá se comunicar com o SQLite. | Deve ter   |
+| RNF-005 | O sistema deverá deverá atender às normas legais, tais como padrões, leis, etc. | Deve ter   |
+| RNF-006 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários. | Deveria ter  |
 
 
 ## Restrições
