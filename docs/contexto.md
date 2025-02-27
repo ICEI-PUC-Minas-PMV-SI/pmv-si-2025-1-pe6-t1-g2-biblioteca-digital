@@ -246,7 +246,7 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 ### 7. IDE
 - **IDE Backend**: Pycharm.
 - **IDE Frontend**: VSCode.
-- 
+  
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
