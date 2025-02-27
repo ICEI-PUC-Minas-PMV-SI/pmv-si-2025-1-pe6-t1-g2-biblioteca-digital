@@ -226,7 +226,7 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 - **Frontend**: Utiliza React com Next.js para renderização eficiente e otimização de SEO.
 
 ### 2. Banco de Dados
-- **Relacional**: SQLITE para armazenamento estruturado e suporte a consultas complexas.
+- **Relacional**: SQLite para armazenamento estruturado e suporte a consultas complexas.
 
 ### 3. Arquitetura
 - **Monolito**: Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
