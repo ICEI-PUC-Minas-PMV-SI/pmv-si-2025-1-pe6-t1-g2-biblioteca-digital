@@ -219,42 +219,34 @@ A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, tod
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Esta especificação define o stack tecnológico adotado para garantir eficiência, escalabilidade e segurança no desenvolvimento do projeto.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 ### 1. Linguagem de Programação
-- **Backend**: Desenvolvido em Node.js com TypeScript para garantir tipagem forte e melhor manutenibilidade.
+- **Backend**: Desenvolvido em Python com o uso do framework Django.
 - **Frontend**: Utiliza React com Next.js para renderização eficiente e otimização de SEO.
 
 ### 2. Banco de Dados
-- **Relacional**: PostgreSQL para armazenamento estruturado e suporte a consultas complexas.
-- **NoSQL**: Redis para cache e armazenamento de sessões.
+- **Relacional**: SQLITE para armazenamento estruturado e suporte a consultas complexas.
 
 ### 3. Arquitetura
-- **Microserviços**: Utiliza um modelo baseado em microsserviços com comunicação via gRPC e REST.
-- **Event-Driven**: RabbitMQ para filas de mensagens e comunicação assíncrona entre serviços.
+- **Monolito**: Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
 
-### 4. Infraestrutura e DevOps
-- **Containerização**: Docker para empacotamento e execução consistente dos serviços.
-- **Orquestração**: Kubernetes para escalabilidade e gerenciamento de contêineres.
-- **CI/CD**: GitHub Actions para automação de testes e deploys.
-- **Monitoramento**: Prometheus e Grafana para coleta de métricas e visualização de desempenho.
-
-### 5. Segurança
+### 4. Segurança
 - **Autenticação e Autorização**: OAuth 2.0 e OpenID Connect para gerenciamento seguro de acessos.
 - **Criptografia**: Uso de TLS para comunicação segura e AES para criptografia de dados sensíveis.
 
-### 6. APIs e Integrações
-- **APIs REST e GraphQL**: Oferece suporte a ambos os modelos para maior flexibilidade.
+### 5. APIs e Integrações
+- **APIs REST**: Oferece suporte a ambos os modelos para maior flexibilidade.
 - **Integrações**: Webhooks e API Gateway para comunicação com sistemas externos.
 
-### 7. Ferramentas de Desenvolvimento
-- **Gerenciamento de Dependências**: Yarn e npm para controle de pacotes.
-- **Linting e Formatação**: ESLint e Prettier para garantir qualidade do código.
-- **Testes**: Jest para testes unitários e Cypress para testes end-to-end.
+### 6. Ferramentas de Desenvolvimento
+- **Gerenciamento de Dependências**: Venv Yarn e npm para controle de pacotes.
+- **Testes**: Pytest para testes unitários.
 
-Esta especificação define o stack tecnológico adotado para garantir eficiência, escalabilidade e segurança no desenvolvimento do projeto.
-
+### 7. IDE
+- **IDE Backend**: Pycharm.
+- **IDE Frontend**: VSCode.
+- 
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
