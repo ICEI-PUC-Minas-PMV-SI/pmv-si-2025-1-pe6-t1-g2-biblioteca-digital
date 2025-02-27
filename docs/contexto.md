@@ -149,16 +149,16 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 
 #### Requisitos Funcionais
 
-| ID      | Descrição do Requisito                                     | Prioridade  |
-| :------ | :------------------------------------------------------- | :---------- |
-| RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |
-| RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |
-| RF-003  | Permitir pesquisa e consulta de livros disponíveis.        | Deve ter   |
-| RF-004  | Permitir reserva e renovação de livros online.            | Deve ter   |
-| RF-005  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |
-| RF-006  | Disponibilizar histórico de empréstimos.                   | Deveria ter  |
-| RF-007  | Notificar usuários sobre prazos de devolução.              | Poderia ter |
-| RF-008  | Emitir relatórios de uso da biblioteca.                  | Poderia ter |
+| ID      | Descrição do Requisito                                     | Prioridade  | Aluno  |
+| :------ | :------------------------------------------------------- | :---------- |:---------- |
+| RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |   |
+| RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |   |
+| RF-003  | Permitir pesquisa e consulta de livros disponíveis.        | Deve ter   |   |
+| RF-004  | Permitir reserva e renovação de livros online.            | Deve ter   |   |
+| RF-005  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |   |
+| RF-006  | Disponibilizar histórico de empréstimos.                   | Deveria ter  |   |
+| RF-007  | Notificar usuários sobre prazos de devolução.              | Poderia ter |   |
+| RF-008  | Emitir relatórios de uso da biblioteca.                  | Poderia ter |   |
 
 #### Requisitos não Funcionais
 
