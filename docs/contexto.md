@@ -130,10 +130,11 @@ O sistema de gestão de bibliotecas foi pensado para atender a diferentes perfis
 | Stakeholder             | Interesse                                                        | Influência |
 | :---------------------- | :--------------------------------------------------------------- | :--------- |
 | Alunos                  | Acesso rápido a livros e facilidade em empréstimos/reservas.     | Alta       |
-| Professores             | Acesso a materiais especializados e renovação de empréstimos. | Média      |
 | Bibliotecários          | Controle eficiente do acervo e automação de processos.             | Alta       |
-| Gestores da Instituição | Relatórios de uso e melhoria na gestão de recursos.                 | Média      |
 | Desenvolvedores         | Criar um sistema funcional e fácil de manter.                 | Alta       |
+| Professores             | Acesso a materiais especializados e renovação de empréstimos. | Média      |
+| Gestores da Instituição | Relatórios de uso e melhoria na gestão de recursos.                 | Média      |
+
 
 ## Especificações do Projeto
 
