@@ -149,7 +149,7 @@ As tabelas a seguir detalham os requisitos funcionais e não funcionais do proje
 
 #### Requisitos Funcionais
 
-| ID      | Descrição do Requisito                                     | Prioridade  | Aluno_Implementador  |
+| ID      | Descrição do Requisito                                     | Prioridade  | Aluno |
 | :------ | :------------------------------------------------------- | :---------- |:---------- |
 | RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |   |
 | RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |   |
