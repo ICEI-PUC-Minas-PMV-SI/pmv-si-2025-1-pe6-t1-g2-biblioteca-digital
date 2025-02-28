@@ -18,7 +18,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Kleber Jacques ferreira de Souza
+* Kleber Jacques Ferreira de Souza
 
 # Planejamento
 
