@@ -52,61 +52,125 @@ A definição dos objetivos específicos foi motivada pela necessidade de garant
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O sistema de gestão de bibliotecas foi pensado para atender a diferentes perfis de usuários, cada um com suas particularidades e necessidades. O objetivo é entender quem são essas pessoas, como elas interagem com a tecnologia e o que esperam do sistema.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+## 1. Alunos
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+* **Quem são:** Estudantes de ensino médio, graduação ou pós-graduação que frequentam a biblioteca para estudos, pesquisas e trabalhos acadêmicos.
+* **Idade:** Entre 15 e 30 anos, em sua maioria.
+* **Relacionamento com a tecnologia:** Jovens que estão familiarizados com smartphones, aplicativos e internet, mas nem todos têm conhecimentos técnicos avançados.
+* **O que precisam:**
+    * Encontrar livros de forma rápida e fácil.
+    * Reservar e renovar livros online, sem precisar ir até a biblioteca.
+    * Acompanhar prazos de devolução e receber lembretes.
+* **O que esperam:** Um sistema simples, ágil e que funcione bem tanto no computador quanto no celular.
 
-# Especificações do Projeto
+## 2. Professores e Pesquisadores
 
-## Requisitos
+* **Quem são:** Docentes e pesquisadores que utilizam a biblioteca para preparar aulas, orientar alunos e desenvolver pesquisas.
+* **Idade:** Entre 30 e 60 anos, com perfis variados.
+* **Relacionamento com a tecnologia:** Alguns são bastante familiarizados com ferramentas digitais, enquanto outros preferem soluções mais diretas e sem complicações.
+* **O que precisam:**
+    * Acesso a livros técnicos, artigos e materiais de referência.
+    * Renovar empréstimos sem burocracia.
+    * Encontrar materiais específicos com facilidade.
+* **O que esperam:** Um sistema confiável, que economize tempo e ofereça suporte para suas atividades acadêmicas.
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+## 3. Funcionários da Biblioteca (Bibliotecários e Equipe)
 
-### Requisitos Funcionais
+* **Quem são:** Profissionais responsáveis pela organização do acervo, empréstimos, devoluções e atendimento ao público.
+* **Idade:** Variada, mas muitos têm experiência consolidada na área.
+* **Relacionamento com a tecnologia:** Alguns têm familiaridade com sistemas digitais, mas outros podem preferir ferramentas mais simples e diretas.
+* **O que precisam:**
+    * Cadastrar, editar e remover livros do sistema.
+    * Controlar empréstimos e devoluções de forma eficiente.
+    * Gerar relatórios sobre o uso da biblioteca.
+* **O que esperam:** Um sistema que facilite o trabalho diário, reduza erros e agilize processos manuais.
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que os usuários realizem cadastro e login	 | ALTA | 
-|RF-002| Permitir que administradores cadastrem, editem e removam livros | ALTA | 
-|RF-003| Permitir pesquisa e consulta de livros disponíveis	   | ALTA |
-|RF-004| Permitir que usuários filtrem os livros por autor, gênero e disponibilidade		   | ALTA |
-|RF-005| Permitir reserva e renovação de livros online		   | ALTA |
-|RF-006| Disponibilizar histórico de empréstimos			   | MÉDIA |
-|RF-007| Notificar usuários sobre prazos de devolução		   | BAIXA |
-|RF-008| Emitir relatórios de uso da biblioteca			   | BAIXA |
+## 4. Gestores da Instituição
+
+* **Quem são:** Diretores, coordenadores e outros gestores responsáveis pela administração da instituição de ensino.
+* **Idade:** Geralmente acima de 40 anos.
+* **Relacionamento com a tecnologia:** Menos envolvidos no uso diário do sistema, mas interessados em dados e relatórios para tomada de decisões.
+* **O que precisam:**
+    * Acesso a informações sobre o uso da biblioteca (livros mais emprestados, frequência de usuários, etc.).
+    * Dados para planejar a aquisição de novos livros e recursos.
+* **O que esperam:** Um sistema que forneça métricas claras e ajude a melhorar a gestão da biblioteca.
+
+# Personas
+
+## Persona 1: Ana, Estudante de Graduação
+
+* **Idade:** 22 anos
+* **Perfil:** Ana está no terceiro ano de Letras e usa a biblioteca frequentemente para pegar livros de literatura e fazer pesquisas.
+* **Objetivo:** Encontrar livros rapidamente e renovar empréstimos sem precisar ir até a biblioteca.
+* **Frustrações:** Às vezes, os livros que ela precisa já estão emprestados, e ela não recebe avisos sobre disponibilidade.
+* **Necessidades:** Um sistema que permita reservar livros online e envie notificações sobre prazos de devolução.
+
+## Persona 2: Carlos, Professor de História
+
+* **Idade:** 48 anos
+* **Perfil:** Carlos é professor há 20 anos e usa a biblioteca para preparar aulas e orientar alunos.
+* **Objetivo:** Acessar livros técnicos e materiais de referência sem demora.
+* **Frustrações:** O processo manual de renovação de empréstimos é demorado e burocrático.
+* **Necessidades:** Um sistema que permita renovar empréstimos online e ofereça uma busca eficiente por materiais especializados.
+
+## Persona 3: Mariana, Bibliotecária
+
+* **Idade:** 52 anos
+* **Perfil:** Mariana trabalha na biblioteca há 15 anos e é responsável pela organização do acervo e pelos empréstimos.
+* **Objetivo:** Manter o acervo organizado e controlar empréstimos de forma eficiente.
+* **Frustrações:** Os processos manuais são propensos a erros e consomem muito tempo.
+* **Necessidades:** Um sistema que automatize tarefas repetitivas e facilite a gestão do acervo.
+
+# Mapa de Stakeholders
+
+É uma ferramenta visual que identifica grupos ou indivíduos com interesse no projeto, sua influência e como são impactados. No sistema de gestão de bibliotecas, ele é crucial para considerar as necessidades de todos durante o desenvolvimento e implementação, garantindo que o sistema atenda a alunos, professores, bibliotecários, gestores e equipe de TI de forma eficiente.
+
+| Stakeholder             | Interesse                                                        | Influência |
+| :---------------------- | :--------------------------------------------------------------- | :--------- |
+| Alunos                  | Acesso rápido a livros e facilidade em empréstimos/reservas.     | Alta       |
+| Bibliotecários          | Controle eficiente do acervo e automação de processos.             | Alta       |
+| Desenvolvedores         | Criar um sistema funcional e fácil de manter.                 | Alta       |
+| Professores             | Acesso a materiais especializados e renovação de empréstimos. | Média      |
+| Gestores da Instituição | Relatórios de uso e melhoria na gestão de recursos.                 | Média      |
 
 
+## Especificações do Projeto
 
-### Requisitos não Funcionais
+### Requisitos
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve garantir a segurança dos dados dos usuários	 | ALTA | 
-|RNF-002| A interface deve ser intuitiva e acessível para diferentes perfis de usuários	 |  MÉDIA | 
-|RNF-002| O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android		 |  ALTA | 
+As tabelas a seguir detalham os requisitos funcionais e não funcionais do projeto. A priorização dos requisitos foi realizada utilizando a técnica de MoSCoW, classificando-os em:
 
+* **Deve ter:** Requisitos essenciais para o funcionamento básico do sistema.
+* **Deveria ter:** Requisitos importantes, mas não críticos para o lançamento inicial.
+* **Poderia ter:** Requisitos desejáveis, que podem ser implementados em futuras versões.
+* **Não terá:** Requisitos que não serão implementados neste momento.
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+#### Requisitos Funcionais
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID      | Descrição do Requisito                                     | Prioridade  | Aluno |
+| :------ | :------------------------------------------------------- | :---------- |:---------- |
+| RF-001  | Permitir que os usuários realizem cadastro e login.       | Deve ter   |   |
+| RF-002  | Permitir que administradores cadastrem, editem e removam livros. | Deve ter   |   |
+| RF-003  | Permitir pesquisa e consulta de livros disponíveis.        | Deve ter   |   |
+| RF-004  | Permitir reserva e renovação de livros online.            | Deve ter   |   |
+| RF-005  | Permitir que usuários filtrem os livros por autor, gênero e disponibilidade. | Deveria ter  |   |
+| RF-006  | Disponibilizar histórico de empréstimos.                   | Deveria ter  |   |
+| RF-007  | Notificar usuários sobre prazos de devolução.              | Poderia ter |   |
+| RF-008  | Emitir relatórios de uso da biblioteca.                  | Poderia ter |   |
+
+#### Requisitos não Funcionais
+
+| ID      | Descrição do Requisito                                  | Prioridade  |
+| :------ | :---------------------------------------------------- | :---------- |
+| RNF-001 | O sistema deve garantir a segurança dos dados dos usuários. | Deve ter   |
+| RNF-002 | O sistema deve ser compatível com navegadores modernos e sistemas operacionais Android. | Deve ter   |
+| RNF-003 | O sistema deverá ser desenvolvido em Python. | Deve ter   |
+| RNF-004 | O sistema deverá se comunicar com o SQLite. | Deve ter   |
+| RNF-005 | O sistema deverá deverá atender às normas legais, tais como padrões, leis, etc. | Deve ter   |
+| RNF-006 | A interface deve ser intuitiva e acessível para diferentes perfis de usuários. | Deveria ter  |
+
 
 ## Restrições
 
@@ -114,8 +178,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto não possui previsão orçamentária.   |
+|02| O projeto deverá ser entregue até o final do semestre. |
+
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
@@ -127,19 +192,61 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
 
+* **Cadastro e Login:** Permite que usuários e administradores acessem o sistema de forma segura.
+* **Gerenciamento de Acervo:** Funcionalidades para adicionar, editar e remover livros do acervo.
+* **Pesquisa e Consulta:** Ferramentas para encontrar livros por título, autor, gênero e disponibilidade.
+* **Reserva e Renovação:** Permite que usuários reservem e renovem livros online.
+* **Histórico de Empréstimos:** Registro de todos os empréstimos realizados por cada usuário.
+* **Notificações:** Alertas sobre prazos de devolução e outras informações relevantes.
+* **Relatórios:** Geração de relatórios sobre o uso da biblioteca.
+
 # Arquitetura da Solução
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A arquitetura escolhida foi a monolítica que é um sistema único, ou seja, todas as funções estão em um único pacote a ser distribuído ao cliente. Sua principal característica é acoplamento de módulos de diferentes abordagens, ou seja, é possível acessar código de módulos distintos minimizando a necessidade de integrações.
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+<img src="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/dev-victor/docs/img/arquitetura.png" width = "95%">
 
+## Vantagens da Arquitetura Monolítica
+
+* **Estruturação simplificada:** Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
+* **Implantação:** A implantação de aplicações monolíticas é mais simples do que a implantação de microsserviços. Os desenvolvedores instalam toda a base de código da aplicação e as dependências em um único ambiente.
+* **Baixa integração:** Não há necessidade de realizar integração entre módulos distintos dentro do mesmo sistema, tais “integrações” são feitas dentro do código-fonte.
+
+## Desvantagens da Arquitetura Monolítica
+* **Manutenção:** A aplicação se torna cada vez maior, o que faz com que seja implementado uma maior complexidade a estrutura do código com passar do tempo. Pequenas alterações e correções podem demandar um grande esforço pois todo o código deverá ser novamente testado e reimplantado no servidor.
+* **Linha de código:** Um pequeno erro no código fonte pode fazer com que todo o sistema fique inoperante. Tais incidentes têm o potencial de causar interrupções graves no serviço e afetar todos os usuários ativos.
+* **Difícil de escalonar:** As aplicações monolíticas enfrentam vários desafios à medida que se expandem. Como a arquitetura contém todas as funcionalidades em uma única base de código, isso faz com que, toda a aplicação deva ser escalada conforme os requisitos mudam.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Esta especificação define o stack tecnológico adotado para garantir eficiência, escalabilidade e segurança no desenvolvimento do projeto.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+### 1. Linguagem de Programação
+- **Backend**: Desenvolvido em Python com o uso do framework Django.
+- **Frontend**: Utiliza React com Next.js para renderização eficiente e otimização de SEO.
 
+### 2. Banco de Dados
+- **Relacional**: SQLite para armazenamento estruturado e suporte a consultas complexas.
+
+### 3. Arquitetura
+- **Monolito**: Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
+
+### 4. Segurança
+- **Autenticação e Autorização**: OAuth 2.0 e OpenID Connect para gerenciamento seguro de acessos.
+- **Criptografia**: Uso de TLS para comunicação segura e AES para criptografia de dados sensíveis.
+
+### 5. APIs e Integrações
+- **APIs REST**: Oferece suporte a ambos os modelos para maior flexibilidade.
+- **Integrações**: Webhooks e API Gateway para comunicação com sistemas externos.
+
+### 6. Ferramentas de Desenvolvimento
+- **Gerenciamento de Dependências**: Venv Yarn e npm para controle de pacotes.
+- **Testes**: Pytest para testes unitários.
+
+### 7. IDE
+- **IDE Backend**: Pycharm.
+- **IDE Frontend**: VSCode.
+  
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
