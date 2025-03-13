@@ -38,10 +38,6 @@ A definição dos objetivos específicos foi motivada pela necessidade de garant
 - *SciELO* (2024). [Desafios na implementação de bibliotecas digitais](https://www.scielo.br/j/ci/a/Wb33LWZdjFTqxTrRhpDbwcp/?utm_source=chatgpt.com).  
 - *InterSaberes* (2024). [Biblioteca digital: desafios do bibliotecário](https://www.intersaberes.com/blog/biblioteca-digital-desafios-do-bibliotecario/?utm_source=chatgpt.com).  
 
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
 O sistema de gestão de bibliotecas foi pensado para atender a diferentes perfis de usuários, cada um com suas particularidades e necessidades. O objetivo é entender quem são essas pessoas, como elas interagem com a tecnologia e o que esperam do sistema.
