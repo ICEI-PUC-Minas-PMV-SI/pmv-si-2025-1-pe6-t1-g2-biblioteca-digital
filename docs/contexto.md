@@ -11,11 +11,6 @@ Sem automação, é comum que bibliotecas tenham registros bagunçados, dificult
 
 A solução é um sistema que centralize e organize tudo, automatizando o controle de empréstimos e devoluções. Com um banco de dados bem estruturado, fica mais fácil manter as informações seguras, reduzir erros e garantir um serviço muito mais eficiente para todo mundo. Com isso, será desenvolvido uma API que permitirá a integração com uma aplicação web quanto para um aplicativo mobile Android. Isso possibilitará que os usuários acessem o sistema de maneira flexível, seja através de seus navegadores em desktop ou por meio de dispositivos móveis, tornando o processo de consulta, reserva e devolução de livros ainda mais ágil e acessível, independentemente da plataforma.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
 ## Objetivos
 
 O objetivo geral deste projeto é desenvolver um software para solucionar os problemas relacionados à administração de bibliotecas, proporcionando uma maneira mais eficiente e prática de gerenciar o acervo e os empréstimos de livros. O sistema permitirá o controle automatizado de empréstimos, devoluções e reservas, além de garantir o acompanhamento em tempo real das condições do acervo e dos usuários.
@@ -26,9 +21,6 @@ Desenvolver uma API de integração para que tanto a aplicação web quanto o ap
 
 Implementar um banco de dados robusto para armazenar as informações dos livros, usuários e transações de empréstimo, garantindo a integridade e a segurança dos dados, além de otimizar a consulta e atualização das informações no sistema.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ## Justificativa
 
 A escolha de desenvolver um sistema de gestão para bibliotecas digitais visa modernizar e otimizar o controle de empréstimos e devoluções de livros, resolvendo problemas comuns como extravios e registros manuais desorganizados. A aplicação será acessível tanto por meio de uma plataforma web quanto de um aplicativo mobile Android, proporcionando praticidade e flexibilidade aos usuários.
@@ -184,10 +176,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
 # Catálogo de Serviços
 
 Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
@@ -251,9 +239,4 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+
