@@ -187,11 +187,11 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 
 Segue descrito abaixo os testes funcionais e as ferramentas a serem utilizadas.
 
-# 1. Casos de Teste Funcionais
+## 1. Casos de Teste Funcionais
 
 Estes testes validam os requisitos funcionais da aplicação.
 
-## 1.1 Cadastro bem-sucedido
+## 1.1 - Cadastro bem-sucedido
 
 ✅ Descrição: Verificar se o sistema cadastra corretamente um aluno com todos os dados válidos.
 ✅ Entrada:
@@ -209,7 +209,7 @@ Estes testes validam os requisitos funcionais da aplicação.
 ```
 ✅ Saída esperada: Código 201 Created e mensagem "Aluno cadastrado com sucesso!!!"
 
-## 1.2 CPF inválido
+## 1.2 - CPF inválido
 
 ✅ Descrição: O sistema deve rejeitar um CPF inválido (menos de 11 dígitos ou caracteres não numéricos).
 ✅ Entrada:
@@ -226,7 +226,7 @@ Estes testes validam os requisitos funcionais da aplicação.
 ```
 ✅ Saída esperada: Código 400 Bad Request com erro "CPF inválido"
 
-## 1.3 Campos obrigatórios ausentes
+## 1.3 - Campos obrigatórios ausentes
 
 ✅ Descrição: O sistema deve rejeitar requisições sem os campos obrigatórios (cpf, nome, nascimento, endereco, email, tel1).
 ✅ Entrada:
@@ -239,7 +239,7 @@ Estes testes validam os requisitos funcionais da aplicação.
 ```
 ✅ Saída esperada: Código 400 Bad Request com erro "Campos obrigatórios ausentes: cpf, nascimento, endereco, tel1"
 
-## 1.4 E-mail inválido
+## 1.4 - E-mail inválido
 
 ✅ Descrição: O sistema deve rejeitar e-mails em formato inválido.
 ✅ Entrada:
@@ -256,13 +256,13 @@ Estes testes validam os requisitos funcionais da aplicação.
 ```
 ✅ Saída esperada: Código 400 Bad Request com erro "Formato de e-mail inválido"
 
-## 1.5 Cadastro duplicado
+## 1.5 - Cadastro duplicado
 
 ✅ Descrição: O sistema deve impedir o cadastro de um CPF já existente.
 ✅ Entrada: Requisição com CPF "12345678901" já cadastrado.
 ✅ Saída esperada: Código 409 Conflict com erro "Aluno já cadastrado"
 
-## 1.6 Formato de data incorreto
+## 1.6 - Formato de data incorreto
 
 ✅ Descrição: O sistema deve rejeitar datas de nascimento em formato incorreto.
 ✅ Entrada:
