@@ -193,6 +193,41 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+{
+  "test_case": "Cadastrar um aluno com sucesso",
+  "method": "POST",
+  "url": "https://www.seudominio.com.br/api/v1/alunos/",
+  "headers": {
+    "Authorization": "Bearer {{token_app}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "cpf": "12345678901",
+    "nome": "João",
+    "sobrenome": "Silva",
+    "nascimento": "2000-05-15",
+    "endereco": "Rua das Flores, 123",
+    "email": "joao.silva@email.com",
+    "tel1": "11999998888",
+    "tel2": "11888887777"
+  },
+  "expected_status_code": 201,
+  "expected_response": {
+    "status": "Aluno cadastrado com sucesso!!!",
+    "dados": {
+      "cpf": "12345678901",
+      "nome": "João",
+      "sobrenome": "Silva",
+      "nascimento": "2000-05-15",
+      "endereco": "Rua das Flores, 123",
+      "email": "joao.silva@email.com",
+      "tel1": "11999998888",
+      "tel2": "11888887777"
+    }
+  }
+}
+
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
