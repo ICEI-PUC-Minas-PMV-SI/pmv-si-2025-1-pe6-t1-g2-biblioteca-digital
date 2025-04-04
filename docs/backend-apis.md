@@ -29,7 +29,6 @@ O objetivo principal desta API é fornecer um serviço eficiente e seguro para a
 
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 A aplicação seguirá uma arquitetura monolítica, com um backend desenvolvido em Python e um banco de dados relacional para armazenar informações sobre livros, alunos e empréstimos. O sistema contará com uma API que permitirá a interação entre a aplicação web e o aplicativo mobile Android, garantindo acessibilidade e eficiência na gestão bibliotecária
 
