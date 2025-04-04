@@ -83,9 +83,40 @@ class Livro:
 
 #### Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+Esta especificação define o stack tecnológico adotado para garantir eficiência, escalabilidade e segurança no desenvolvimento do projeto.
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+### 1. Linguagem de Programação
+
+- **Backend**: Desenvolvido em **Python** com o uso do framework **Django**.  
+- **Frontend**: Utiliza **React** com **Next.js** para renderização eficiente e otimização de SEO.
+
+### 2. Banco de Dados
+
+- **Relacional**: **SQLite** para armazenamento estruturado e suporte a consultas complexas.
+
+### 3. Arquitetura
+
+- **Monolito**: Por ser um projeto único, o sistema possui um nível de complexidade de coordenação menor.
+
+### 4. Segurança
+
+- **Autenticação e Autorização**: **OAuth 2.0** e **OpenID Connect** para gerenciamento seguro de acessos.
+- **Criptografia**: Uso de **TLS** para comunicação segura e **AES** para criptografia de dados sensíveis.
+
+### 5. APIs e Integrações
+
+- **APIs REST**: Oferece suporte a ambos os modelos para maior flexibilidade.
+- **Integrações**: **Webhooks** e **API Gateway** para comunicação com sistemas externos.
+
+### 6. Ferramentas de Desenvolvimento
+
+- **Gerenciamento de Dependências**: `venv`, `Yarn` e `npm` para controle de pacotes.
+- **Testes**: **Pytest** para testes unitários.
+
+### 7. IDE
+
+- **IDE Backend**: **PyCharm**  
+- **IDE Frontend**: **VSCode**
 
 ## API Endpoints
 
