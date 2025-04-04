@@ -4,20 +4,79 @@ O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o su
 
 Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
 
-[Inclua uma breve descrição do projeto.]
+O sistema de gestão de bibliotecas visa modernizar e facilitar o gerenciamento de acervos, empréstimos, reservas, renovações e o controle de usuários em instituições de ensino. A aplicação será acessível via web e aplicativo mobile (Android), utilizando uma API integrada para centralizar as operações. O sistema atenderá alunos, professores, bibliotecários e gestores, proporcionando uma experiência unificada e segura.
+
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+O objetivo principal desta API é fornecer um serviço eficiente e seguro para a gestão de bibliotecas, permitindo o controle automatizado do acervo e das operações de empréstimos e reservas de livros.
 
-[Inclua os objetivos da sua api.]
+Objetivos específicos:
+
+Desenvolver uma API de integração para permitir a interação entre a aplicação web e o aplicativo mobile Android, garantindo que os usuários possam acessar funcionalidades essenciais como consulta ao acervo, reserva e devolução de livros em tempo real.
+
+Automatizar o envio de notificações aos usuários sobre prazos de devolução, confirmações de reserva e outras atualizações relevantes, melhorando a experiência e a organização do acervo.
+
+Implementar um banco de dados robusto para armazenar informações sobre livros, usuários e transações de empréstimo, garantindo escalabilidade, otimização de consultas e integridade dos dados.
+
+Disponibilizar funcionalidades para bibliotecários e gestores acompanharem o histórico de empréstimos, gerarem relatórios personalizados e monitorarem a disponibilidade do acervo.
+
+Facilitar futuras integrações com sistemas acadêmicos ou outras plataformas.
 
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+A aplicação seguirá uma arquitetura monolítica, com um backend desenvolvido em Python e um banco de dados relacional para armazenar informações sobre livros, alunos e empréstimos. O sistema contará com uma API que permitirá a interação entre a aplicação web e o aplicativo mobile Android, garantindo acessibilidade e eficiência na gestão bibliotecária
 
-## Tecnologias Utilizadas
+### Estrutura de Dados (Modelo Relacional)
+
+A modelagem segue o modelo entidade-relacionamento (ER) e possui as seguintes tabelas:  
+
+#### 1. Entidades Principais  
+
+#### **Livros**  
+Armazena informações gerais sobre cada livro.  
+
+- **Atributos**: `id_livro` (PK), `titulo`, `descricao`, `autor`, `ano_publicacao`, `editora`.  
+- **Relacionamento**: Cada livro pode ter múltiplas tiragens.  
+
+#### **Tiragens**  
+Representa cada edição específica de um livro.  
+
+- **Atributos**: `id_tiragem` (PK), `isbn`, `id_livro` (FK).  
+- **Relacionamento**: Cada tiragem pertence a um único livro.  
+
+#### **Alunos**  
+Contém os dados dos alunos que utilizam a biblioteca.  
+
+- **Atributos**: `id_aluno` (PK), `cpf`, `nome`, `endereco`, `email`, `tel1`, `tel2`.  
+- **Relacionamento**: Cada aluno pode realizar vários empréstimos.  
+
+#### **Empréstimos**  
+Registra os empréstimos realizados.  
+
+- **Atributos**: `id_emprestimo` (PK), `id_tiragem` (FK), `id_aluno` (FK), `data_emprestimo`, `data_devolucao`.  
+- **Relacionamento**: Cada empréstimo pertence a um aluno e está associado a uma tiragem específica.  
+
+### Diagrama de Classes
+
+A modelagem pode ser representada por classes seguindo a estrutura do banco de dados.
+
+(FAZER) -> Exemplo:
+
+```python
+class Livro:
+    def __init__(self, id_livro, titulo, descricao, autor, ano_publicacao, editora):
+        self.id_livro = id_livro
+        self.titulo = titulo
+        self.descricao = descricao
+        self.autor = autor
+        self.ano_publicacao = ano_publicacao
+        self.editora = editora
+```
+
+#### Tecnologias Utilizadas
 
 Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
 
@@ -55,6 +114,23 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+
+A segurança da aplicação é um aspecto essencial no desenvolvimento do sistema de gestão de bibliotecas, especialmente considerando que ele será acessado via web e aplicativo mobile. A seguir, estão as principais medidas de segurança adotadas:
+
+### 1. Autenticação
+- Implementação de autenticação baseada em **tokens JWT (JSON Web Token)** para garantir que apenas usuários autenticados possam acessar os recursos da API.
+- Revalidação de token em todas as requisições sensíveis.
+
+### 2. Autorização
+- Controle de acesso por **nível de usuário**, diferenciando permissões de alunos, bibliotecários e gestores.
+- Validação de permissões em todos os endpoints críticos para garantir que cada usuário só tenha acesso às funcionalidades permitidas.
+
+### 3. Proteção contra ataques comuns
+- **Prevenção contra SQL Injection** com uso de ORM seguro e consultas parametrizadas.
+
+### 6. Boas Práticas Adicionais
+- Validação de entrada de dados do usuário para evitar comportamentos inesperados.
+
 
 ## Implantação
 
