@@ -33,7 +33,7 @@ O objetivo principal desta API é fornecer um serviço eficiente e seguro para a
 
 A aplicação seguirá uma arquitetura monolítica, com um backend desenvolvido em Python e um banco de dados relacional para armazenar informações sobre livros, alunos e empréstimos. O sistema contará com uma API que permitirá a interação entre a aplicação web e o aplicativo mobile Android, garantindo acessibilidade e eficiência na gestão bibliotecária
 
-![Modelo ER da Biblioteca](img/Modelo-ER-Biblioteca.png)
+![Modelo ER da Biblioteca](../img/Modelo-ER-Biblioteca.png)
 
 ### Estrutura de Dados (Modelo Relacional)
 
