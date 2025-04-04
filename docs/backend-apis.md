@@ -49,13 +49,13 @@ Armazena informações gerais sobre cada livro.
 #### **Tiragens**  
 Representa cada edição específica de um livro.  
 
-- **Atributos**: `id_tiragem` (PK), `isbn`, `id_livro` (FK).  
+- **Atributos**: `id_tiragem` (PK), `isbn`, `disponivel`, `id_livro` (FK).  
 - **Relacionamento**: Cada tiragem pertence a um único livro.  
 
 #### **Alunos**  
 Contém os dados dos alunos que utilizam a biblioteca.  
 
-- **Atributos**: `id_aluno` (PK), `cpf`, `nome`, `endereco`, `email`, `tel1`, `tel2`.  
+- **Atributos**: `id_aluno` (PK), `cpf`, `nome`, `sobrenome`, `nascimento`, `endereco`, `email`, `tel1`, `tel2`.  
 - **Relacionamento**: Cada aluno pode realizar vários empréstimos.  
 
 #### **Empréstimos**  
@@ -67,9 +67,6 @@ Registra os empréstimos realizados.
 ### Diagrama de Classes
 
 A modelagem pode ser representada por classes seguindo a estrutura do banco de dados.
-
-(FAZER) -> Exemplo:
-
 ```python
 class Aluno(Base):
     cpf = models.CharField(max_length=11, unique=True, null=False, blank=False)
