@@ -187,7 +187,7 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 
 Segue descrito abaixo os testes funcionais e as ferramentas a serem utilizadas.
 
-### 1. Casos de Teste Funcionais
+# 1. Casos de Teste Funcionais
 
 Estes testes validam os requisitos funcionais da aplicação.
 
