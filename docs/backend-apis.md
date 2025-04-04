@@ -169,7 +169,7 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 ### 3. Proteção contra ataques comuns
 - **Prevenção contra SQL Injection** com uso de ORM seguro e consultas parametrizadas.
 
-### 6. Boas Práticas Adicionais
+### 4. Boas Práticas Adicionais
 - Validação de entrada de dados do usuário para evitar comportamentos inesperados.
 
 
