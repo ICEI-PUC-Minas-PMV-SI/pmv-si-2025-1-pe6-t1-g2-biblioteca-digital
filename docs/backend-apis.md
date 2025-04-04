@@ -118,8 +118,6 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
 A segurança da aplicação é um aspecto essencial no desenvolvimento do sistema de gestão de bibliotecas, especialmente considerando que ele será acessado via web e aplicativo mobile. A seguir, estão as principais medidas de segurança adotadas:
 
 ### 1. Autenticação
