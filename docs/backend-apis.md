@@ -193,6 +193,34 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+1. Casos de Teste Funcionais
+
+Estes testes validam os requisitos funcionais da aplicação.
+1.1 Cadastro bem-sucedido
+
+✅ Descrição: Verificar se o sistema cadastra corretamente um aluno com todos os dados válidos.
+✅ Entrada:
+```json
+{
+  "cpf": "12345678901",
+  "nome": "João",
+  "sobrenome": "Silva",
+  "nascimento": "2000-05-15",
+  "endereco": "Rua das Flores, 123",
+  "email": "joao.silva@email.com",
+  "tel1": "11999998888",
+  "tel2": "11888887777"
+}
+'''
+✅ Saída esperada: Código 201 Created e mensagem "Aluno cadastrado com sucesso!!!"
+
+
+
+
+
+
+
+
 {
   "test_case": "Cadastrar um aluno com sucesso",
   "method": "POST",
