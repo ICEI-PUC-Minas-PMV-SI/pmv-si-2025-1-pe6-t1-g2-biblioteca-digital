@@ -211,7 +211,7 @@ Estes testes validam os requisitos funcionais da aplicação.
   "tel1": "11999998888",
   "tel2": "11888887777"
 }
-'''
+```
 ✅ Saída esperada: Código 201 Created e mensagem "Aluno cadastrado com sucesso!!!"
 
 
