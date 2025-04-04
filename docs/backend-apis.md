@@ -120,32 +120,10 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
+Link da documentação: https://documenter.getpostman.com/view/14303483/2sAYdoESgo#bd387009-bb40-4502-b297-1c0de1be8e93
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+![Modelo de Documentação](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/main/docs/img/Imagem_Documentacao.jpeg)
+
 
 ## Considerações de Segurança
 
