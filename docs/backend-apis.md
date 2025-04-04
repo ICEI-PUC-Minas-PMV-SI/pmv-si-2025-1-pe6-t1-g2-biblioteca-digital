@@ -11,17 +11,21 @@ O sistema de gestão de bibliotecas visa modernizar e facilitar o gerenciamento 
 
 O objetivo principal desta API é fornecer um serviço eficiente e seguro para a gestão de bibliotecas, permitindo o controle automatizado do acervo e das operações de empréstimos e reservas de livros.
 
-Objetivos específicos:
+- **Desenvolver uma API de integração**  
+  Permitir a interação entre a aplicação web e o aplicativo mobile Android, garantindo que os usuários possam acessar funcionalidades essenciais como consulta ao acervo, reserva e devolução de livros em tempo real.
 
-Desenvolver uma API de integração para permitir a interação entre a aplicação web e o aplicativo mobile Android, garantindo que os usuários possam acessar funcionalidades essenciais como consulta ao acervo, reserva e devolução de livros em tempo real.
+- **Automatizar o envio de notificações**  
+  Enviar aos usuários alertas sobre prazos de devolução, confirmações de reserva e outras atualizações relevantes, melhorando a experiência e a organização do acervo.
 
-Automatizar o envio de notificações aos usuários sobre prazos de devolução, confirmações de reserva e outras atualizações relevantes, melhorando a experiência e a organização do acervo.
+- **Implementar um banco de dados robusto**  
+  Armazenar informações sobre livros, usuários e transações de empréstimo, garantindo escalabilidade, otimização de consultas e integridade dos dados.
 
-Implementar um banco de dados robusto para armazenar informações sobre livros, usuários e transações de empréstimo, garantindo escalabilidade, otimização de consultas e integridade dos dados.
+- **Disponibilizar funcionalidades para bibliotecários e gestores**  
+  Permitir o acompanhamento do histórico de empréstimos, geração de relatórios personalizados e monitoramento da disponibilidade do acervo.
 
-Disponibilizar funcionalidades para bibliotecários e gestores acompanharem o histórico de empréstimos, gerarem relatórios personalizados e monitorarem a disponibilidade do acervo.
+- **Facilitar futuras integrações**  
+  Garantir que o sistema possa ser facilmente integrado com sistemas acadêmicos ou outras plataformas tecnológicas.
 
-Facilitar futuras integrações com sistemas acadêmicos ou outras plataformas.
 
 
 ## Modelagem da Aplicação
