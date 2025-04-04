@@ -71,16 +71,48 @@ A modelagem pode ser representada por classes seguindo a estrutura do banco de d
 (FAZER) -> Exemplo:
 
 ```python
-class Livro:
-    def __init__(self, id_livro, titulo, descricao, autor, ano_publicacao, editora):
-        self.id_livro = id_livro
-        self.titulo = titulo
-        self.descricao = descricao
-        self.autor = autor
-        self.ano_publicacao = ano_publicacao
-        self.editora = editora
-```
+class Aluno(Base):
+    cpf = models.CharField(max_length=11, unique=True, null=False, blank=False)
+    nome = models.CharField(null=False, max_length=100, blank=False)
+    sobrenome = models.CharField(null=False, max_length=150, blank=False)
+    nascimento = models.DateField(null=True)
+    endereco = models.CharField(max_length=250, null=True, blank=True)
+    email = models.EmailField(max_length=250, unique=True, blank=False)
+    tel1 = models.CharField(max_length=11, blank=False)
+    tel2 = models.CharField(max_length=11, blank=True)
+    tiragem = models.ManyToManyField(Tiragem, through='Emprestimo')
 
+    def __str__(self):
+        return f"{self.nome} {self.sobrenome}"
+```
+```python
+class Emprestimo(Base):
+    aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)
+    tiragem = models.ForeignKey(Tiragem, on_delete=models.CASCADE)
+    dt_emprestimo = models.DateField()
+    dt_devolucao = models.DateField(blank=True, null=True)
+```
+```python
+class Livro(Base):
+    titulo = models.CharField(null=False, max_length=100)
+    descricao = models.CharField(null=False, max_length=250)
+    editora = models.CharField(null=False, max_length=50)
+    autor = models.CharField(max_length=50)
+    ano_publicacao = models.IntegerField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.titulo}"
+```
+```python
+class Tiragem(Base):
+    isbn = models.CharField(null=False, max_length=13, unique=True)
+    disponivel = models.BooleanField(default=True)
+    livro = models.ForeignKey(Livro, null=True, related_name="tiragens", on_delete=models.SET_NULL)
+
+
+    def __str__(self):
+        return f"{self.livro} - ISBN:{self.isbn} - disp:{self.disponivel}"
+```
 #### Tecnologias Utilizadas
 
 Esta especificação define o stack tecnológico adotado para garantir eficiência, escalabilidade e segurança no desenvolvimento do projeto.
