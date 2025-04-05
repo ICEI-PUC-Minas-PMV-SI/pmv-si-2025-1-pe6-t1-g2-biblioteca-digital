@@ -213,11 +213,10 @@ Será usado um seridor hospedado em uma maquina EC2 da AWS para hospedagem do pr
 
     sudo apt install python3 python3-venv
 
-Criar e ativar ambiente virtual:
-
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate  # Windows
+    Criar e ativar ambiente virtual:
+    python -m venv venv
+    source venv/bin/activate  # Linux/macOS
+    venv\Scripts\activate  # Windows
 
 Instalar dependências do projeto:
 
