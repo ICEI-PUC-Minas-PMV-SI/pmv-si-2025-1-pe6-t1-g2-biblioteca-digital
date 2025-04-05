@@ -152,7 +152,8 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 
 Link da documentação: https://documenter.getpostman.com/view/14303483/2sAYdoESgo#bd387009-bb40-4502-b297-1c0de1be8e93
 
-![Modelo de Documentação](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/main/docs/img/Imagem_Documentacao.jpeg)
+![Modelo de Documentação](![e29dfd6d-1fd5-4bb2-a610-8e9853ddaf46](https://github.com/user-attachments/assets/88dbea31-f2f8-469f-a85c-0452cf419e6f)
+)
 
 
 ## Considerações de Segurança
