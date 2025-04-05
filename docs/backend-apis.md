@@ -177,14 +177,6 @@ A segurança da aplicação é um aspecto essencial no desenvolvimento do sistem
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
-
 ## 1. Requisitos de Hardware e Software
 Hardware (Recomendado para projetos pequenos)
 
@@ -203,27 +195,27 @@ Software
 
 ## 2. Escolha da Plataforma de Hospedagem
 
-Será usado um seridor hospedado em uma maquina EC2 da AWS para hospedagem do projeto
+Será usado o Amazon Elastic Compute Cloud (Amazon EC2) oferece a plataforma de computação mais ampla e aprofundada para hospedagem do projeto.
 
 ## 3. Configuração do Ambiente
 
-    Instalar Python e dependências:
+    # Instalar Python e dependências:
         No Windows: Baixar Python em python.org
         No Linux/macOS:
 
     sudo apt install python3 python3-venv
 
-    Criar e ativar ambiente virtual:
+    # Criar e ativar ambiente virtual:
     
     python -m venv venv
     source venv/bin/activate  # Linux/macOS
     venv\Scripts\activate  # Windows
 
-    Instalar dependências do projeto:
+    # Instalar dependências do projeto:
     
     pip install -r requirements.txt
     
-    Criar variáveis de ambiente (.env):
+    # Criar variáveis de ambiente (.env):
 
     DEBUG=True
     SECRET_KEY=minha_chave_secreta
