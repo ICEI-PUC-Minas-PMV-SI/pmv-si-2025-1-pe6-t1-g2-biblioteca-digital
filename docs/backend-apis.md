@@ -32,7 +32,7 @@ O objetivo principal desta API é fornecer um serviço eficiente e seguro para a
 
 A aplicação seguirá uma arquitetura monolítica, com um backend desenvolvido em Python e um banco de dados relacional para armazenar informações sobre livros, alunos e empréstimos. O sistema contará com uma API que permitirá a interação entre a aplicação web e o aplicativo mobile Android, garantindo acessibilidade e eficiência na gestão bibliotecária
 
-![Imagem da Documentação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/main/docs/img/Imagem_Documentacao.jpeg?raw=true)
+![Modelo ER da Biblioteca](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/main/docs/img/Modelo-ER-Biblioteca.jpeg?raw=true)
 
 ### Estrutura de Dados (Modelo Relacional)
 
@@ -151,8 +151,8 @@ Esta especificação define o stack tecnológico adotado para garantir eficiênc
 
 Link da documentação: https://documenter.getpostman.com/view/14303483/2sAYdoESgo#bd387009-bb40-4502-b297-1c0de1be8e93
 
-![Modelo de Documentação](![e29dfd6d-1fd5-4bb2-a610-8e9853ddaf46](https://github.com/user-attachments/assets/88dbea31-f2f8-469f-a85c-0452cf419e6f)
-)
+![Imagem da Documentação](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/blob/main/docs/img/Imagem_Documentacao.jpeg?raw=true)
+
 
 
 ## Considerações de Segurança
