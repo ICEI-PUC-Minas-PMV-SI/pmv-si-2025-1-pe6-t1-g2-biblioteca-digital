@@ -11,6 +11,9 @@
 # database
 /prisma/db.sqlite
 /prisma/db.sqlite-journal
+
+# macOS system files
+.DS_Store
 db.sqlite
 
 # next.js
