@@ -57,90 +57,97 @@ O projeto da interface web é construído utilizando o T3 Stack, um conjunto de 
 
 ## Projeto da Interface Web
 
-A interface web é estruturada em torno de componentes reutilizáveis, seguindo os padrões de design modernos. O layout das páginas é responsivo, garantindo a acessibilidade em diferentes dispositivos (desktops, tablets e smartphones). As interações do usuário são projetadas para serem fluidas e intuitivas, facilitando a navegação e o uso das funcionalidades oferecidas pelo sistema. A aplicação utiliza roteamento para navegação entre as diferentes seções, como catálogo de livros, área de empréstimos, reservas e painéis administrativos.
+A interface web apresenta um design limpo e moderno, com uma barra de navegação superior que permite o acesso às seções principais: "Livros", "Alunos", "Empréstimos" e "Estatística". A aplicação é responsiva, adaptando-se a diferentes tamanhos de tela para garantir uma boa experiência em diversos dispositivos. As interações são intuitivas, com botões de ação primária destacados e formulários claros para a entrada de dados.
 
 ## Wireframes
 
-[Neste ponto, você incluiria os wireframes das páginas principais. Como não tenho acesso a essas imagens, descreva aqui brevemente as telas principais e a disposição dos elementos, por exemplo:
-
-* **Tela de Catálogo:** Barra de pesquisa, listagem de livros com informações como título, autor e capa (se aplicável), opções de filtragem e paginação.
-* **Tela de Empréstimos:** Lista de empréstimos ativos do usuário, informações sobre a data de devolução, opção de renovação (se aplicável).
-* **Tela de Reserva:** Listagem de livros reserváveis, formulário para realizar reservas.
-* **Painel Administrativo:** (Para bibliotecários e gestores) Dashboards com informações relevantes, acesso a funcionalidades de gerenciamento de acervo, usuários e empréstimos.]
+* **Tela de Livros:** Exibe um catálogo de livros em formato de tabela, com colunas para Título, Descrição, Editora e Autor. Permite a visualização e gerenciamento do acervo. Um botão "Novo Livro" no canto superior direito abre um modal para cadastrar novos livros.
+* **Modal Novo Livro:** Apresenta um formulário com campos para preencher o Título, Descrição, Editora, Autor e Ano de Publicação do novo livro, com botões para "Cancelar" e "Salvar".
+* **Tela de Alunos:** Exibe uma lista de alunos cadastrados em uma tabela com informações como ID, CPF, Nome, Sobrenome, Nascimento, Email, Telefone 1, Telefone 2 e Endereço. Um botão "Novo Aluno" no canto superior direito abre um modal para cadastrar novos alunos.
+* **Modal Novo Aluno:** Apresenta um formulário para cadastrar um novo aluno, com campos para CPF (obrigatório), Nome (obrigatório), Sobrenome, Nascimento (com um seletor de data), Email, Telefone 1, Telefone 2 e Endereço, com botões para "Cancelar" e "Salvar".
+* **Tela de Empréstimos:** Apresenta duas seções principais: "Novo Empréstimo" e "Listar Empréstimos" (através de botões). A seção "Novo Empréstimo" permite selecionar um aluno (buscando por nome ou CPF) e um livro (buscando por título ou autor) para registrar um novo empréstimo. A seção "Listar Empréstimos" exibe uma tabela com os empréstimos ativos e finalizados, incluindo informações como ID do Empréstimo, Aluno, Livro, Data de Empréstimo, Previsão de Devolução, Status e Ações (como "Devolvido em..."). Há também um botão para "Mostrar Pendentes".
+* **Tela de Estatística da Biblioteca:** Exibe um dashboard com diversas métricas importantes, incluindo:
+    * Total de Alunos cadastrados no sistema.
+    * Total de Livros no acervo.
+    * Total de Exemplares cadastrados.
+    * Disponibilidade de Exemplares (em um gráfico de donut, mostrando a quantidade de exemplares disponíveis e emprestados).
+    * Empréstimos por Mês (em um gráfico de linhas, mostrando a evolução dos empréstimos ao longo dos meses).
+    * Livros Mais Emprestados (em um gráfico de barras, listando os livros com maior número de empréstimos).
+    * Um resumo de dados geral da biblioteca.
 
 ## Design Visual
 
-O design visual da interface adota uma paleta de cores [descreva a paleta de cores utilizada, por exemplo, tons de azul e branco para transmitir seriedade e limpeza, com cores de destaque para ações importantes]. A tipografia escolhida busca legibilidade e modernidade, utilizando [mencione as fontes principais]. Ícones são utilizados para complementar a navegação e representar ações de forma visualmente intuitiva. O estilo geral da interface é [descreva o estilo, por exemplo, minimalista, moderno, com foco na usabilidade].
+A interface utiliza um esquema de cores predominantemente branco com detalhes em azul, transmitindo uma sensação de organização e profissionalismo. A tipografia é clara e legível. Os botões de ação primária são destacados em azul, facilitando a identificação das principais funcionalidades. Ícones são utilizados de forma sutil para complementar a navegação e indicar ações. O design geral é moderno e focado na usabilidade, com espaçamento adequado entre os elementos e uma organização lógica das informações.
 
 ## Fluxo de Dados
 
-O fluxo de dados na aplicação web envolve principalmente a interação do usuário com a interface, que por sua vez se comunica com o backend através de chamadas à API (provavelmente utilizando tRPC, dada a estrutura de arquivos).
+O fluxo de dados na aplicação web envolve a interação do usuário com a interface, que se comunica com o backend através de chamadas à API (utilizando tRPC).
 
-1.  O usuário interage com os componentes da interface (por exemplo, preenche um formulário de reserva, clica em um botão de empréstimo).
-2.  O front-end (utilizando React e Next.js) envia uma requisição para a API do backend através das rotas definidas com tRPC.
-3.  O backend (desenvolvido com as tecnologias especificadas anteriormente, como Python/Django) processa a requisição, interagindo com o banco de dados (SQLite ou outro).
-4.  O backend envia uma resposta para o front-end com os dados solicitados ou o resultado da operação.
-5.  O front-end atualiza a interface do usuário com base na resposta recebida.
+1.  O usuário interage com os componentes da interface (por exemplo, busca um livro, cadastra um aluno, registra um empréstimo).
+2.  O front-end (React e Next.js) envia requisições tipadas para as rotas da API no backend através do tRPC.
+3.  O backend (Python/Django ou outra tecnologia) processa as requisições, acessando e manipulando os dados no banco de dados.
+4.  O backend envia respostas tipadas de volta para o front-end com os dados solicitados ou o resultado das operações.
+5.  O front-end atualiza a interface do usuário dinamicamente com base nos dados recebidos, refletindo as alterações ou exibindo as informações solicitadas.
 
 ## Tecnologias Utilizadas
 
-* **React:** Biblioteca JavaScript para construção de interfaces de usuário dinâmicas e interativas.
-* **Next.js:** Framework React para desenvolvimento full-stack com recursos como renderização do lado do servidor (SSR) e roteamento otimizado.
-* **TypeScript:** Superset de JavaScript que adiciona tipagem estática, melhorando a segurança e a manutenibilidade do código.
-* **Tailwind CSS:** Framework CSS utilitário para estilização rápida e consistente da interface.
-* **tRPC:** Biblioteca para construir APIs end-to-end type-safe, facilitando a comunicação entre o front-end e o back-end.
-* **Zod:** Biblioteca de declaração e validação de esquema TypeScript para garantir a integridade dos dados.
+* **React:** Biblioteca JavaScript para construção da interface de usuário interativa e baseada em componentes.
+* **Next.js:** Framework React que oferece funcionalidades como roteamento, renderização do lado do servidor (SSR) e otimizações para performance.
+* **TypeScript:** Linguagem que estende JavaScript com tipagem estática, proporcionando maior segurança e facilitando a manutenção do código.
+* **Tailwind CSS:** Framework CSS utilitário que permite a estilização rápida e consistente dos componentes da interface.
+* **tRPC:** Biblioteca que facilita a criação de APIs end-to-end type-safe, simplificando a comunicação entre o front-end e o back-end com inferência de tipos automática.
+* **Zod:** Biblioteca de declaração e validação de esquemas TypeScript para garantir a integridade dos dados que trafegam entre o front-end e o back-end.
 
 ## Considerações de Segurança
 
-As considerações de segurança para a aplicação web são cruciais para proteger os dados dos usuários e garantir a integridade do sistema:
+As considerações de segurança para a aplicação web são essenciais para proteger os dados dos usuários e garantir a integridade do sistema:
 
-* **Autenticação:** Implementação de um sistema de autenticação robusto para verificar a identidade dos usuários antes de permitir o acesso a funcionalidades protegidas. Isso pode envolver o uso de tokens JWT (como mencionado na documentação anterior) ou outros mecanismos seguros.
-* **Autorização:** Controle de acesso baseado em roles (alunos, bibliotecários, gestores) para garantir que cada usuário tenha acesso apenas às funcionalidades e dados apropriados ao seu nível de permissão.
+* **Autenticação:** Implementação de um sistema de autenticação seguro para verificar a identidade dos usuários antes de conceder acesso às funcionalidades protegidas. É provável o uso de tokens JWT para manter a sessão do usuário autenticada.
+* **Autorização:** Controle de acesso baseado em roles (alunos, bibliotecários, gestores) para garantir que cada usuário tenha permissão apenas para as funcionalidades e dados relevantes ao seu perfil.
 * **Proteção contra ataques comuns:**
-    * **Cross-Site Scripting (XSS):** Sanitização de dados de entrada e saída para prevenir a injeção de scripts maliciosos na interface.
-    * **Cross-Site Request Forgery (CSRF):** Implementação de medidas para evitar que requisições maliciosas sejam enviadas em nome de usuários autenticados.
-    * **Clickjacking:** Proteção da interface contra ataques que tentam enganar os usuários a realizar ações não intencionais.
-* **Validação de dados:** Validação rigorosa dos dados enviados pelo usuário no front-end para prevenir erros e potenciais vulnerabilidades no back-end.
-* **Comunicação segura:** Utilização de HTTPS para criptografar a comunicação entre o navegador do usuário e o servidor, protegendo os dados em trânsito.
+    * **Cross-Site Scripting (XSS):** Medidas para prevenir a injeção de scripts maliciosos na interface, como a sanitização de dados fornecidos pelo usuário.
+    * **Cross-Site Request Forgery (CSRF):** Implementação de tokens CSRF para proteger contra requisições não autorizadas em nome de usuários autenticados.
+    * **Clickjacking:** Estratégias para evitar que a interface seja嵌入 em frames maliciosos para enganar os usuários.
+* **Validação de dados:** Validação rigorosa dos dados de entrada no front-end antes de serem enviados para o backend, ajudando a prevenir erros e potenciais vulnerabilidades.
+* **Comunicação segura:** Utilização de HTTPS para criptografar todo o tráfego entre o navegador do usuário e o servidor, protegendo informações sensíveis durante a transmissão.
 
 ## Implantação
 
 A implantação da aplicação web envolverá as seguintes etapas:
 
 1.  **Requisitos de Hardware e Software:**
-    * **Hardware:** Servidor com capacidade de processamento e memória adequados para suportar o tráfego esperado. Os requisitos específicos dependerão da escala da aplicação.
-    * **Software:** Sistema operacional (Linux recomendado para produção), Node.js (para executar a aplicação Next.js), gerenciador de processos (como PM2 ou systemd) para manter a aplicação online.
+    * **Hardware:** Servidor com recursos adequados para suportar o tráfego esperado e a carga da aplicação. Os requisitos específicos dependerão da escala de uso.
+    * **Software:** Sistema operacional (Linux recomendado), Node.js (para executar a aplicação Next.js), gerenciador de processos (como PM2 ou systemd) para garantir a disponibilidade contínua da aplicação.
 
 2.  **Escolha da Plataforma de Hospedagem:**
-    * Diversas opções de plataformas de hospedagem podem ser consideradas, como Vercel (otimizado para Next.js), Netlify, AWS (com serviços como EC2, S3 e CloudFront), Google Cloud Platform (GCP), Azure, entre outros. A escolha dependerá de fatores como custo, escalabilidade, facilidade de uso e familiaridade com a plataforma.
+    * Plataformas como Vercel (altamente otimizado para Next.js), Netlify, AWS (com serviços como EC2, S3 e CloudFront), Google Cloud Platform (GCP) ou Azure podem ser utilizadas para hospedar a aplicação, oferecendo escalabilidade e confiabilidade.
 
 3.  **Configuração do Ambiente:**
-    * Configurar as variáveis de ambiente necessárias para a aplicação (por exemplo, URLs de API do backend, chaves de API, configurações de banco de dados, se o front-end precisar acessar algum diretamente).
-    * Instalar as dependências do projeto utilizando `npm` ou `yarn`.
-    * Configurar um servidor web reverso (como Nginx ou Apache) para servir a aplicação e lidar com questões como HTTPS e balanceamento de carga (se necessário).
+    * Configuração das variáveis de ambiente necessárias para a aplicação, como URLs da API do backend e outras configurações específicas do ambiente de produção.
+    * Instalação das dependências do projeto utilizando `npm` ou `yarn`.
+    * Configuração de um servidor web reverso (como Nginx) para servir a aplicação, lidar com o tráfego HTTPS e, potencialmente, balanceamento de carga.
 
 4.  **Deploy da Aplicação:**
-    * Construir a versão de produção da aplicação Next.js utilizando o comando `next build`.
-    * Transferir os arquivos de build para o servidor de hospedagem.
-    * Configurar o gerenciador de processos para iniciar e monitorar a aplicação.
-    * Configurar o servidor web reverso para direcionar as requisições para a aplicação Next.js.
+    * Construção da versão otimizada para produção da aplicação Next.js com o comando `next build`.
+    * Transferência dos arquivos de build para o servidor de hospedagem.
+    * Configuração do gerenciador de processos para iniciar e monitorar a aplicação Next.js.
+    * Configuração do servidor web reverso para rotear as requisições para a aplicação Next.js em execução.
 
 5.  **Testes:**
-    * Realizar testes abrangentes no ambiente de produção para garantir que todas as funcionalidades da aplicação web estejam funcionando corretamente e que a integração com o backend esteja operando como esperado. Isso inclui testes de interface do usuário, testes de navegação, testes de formulários e testes de segurança.
+    * Realização de testes completos no ambiente de produção para garantir que todas as funcionalidades da aplicação web estejam funcionando corretamente e que a integração com o backend seja estável. Isso inclui testes de usabilidade, testes de funcionalidade, testes de performance e testes de segurança.
 
 ## Testes
 
-A estratégia de testes para a aplicação web incluirá os seguintes tipos de testes:
+A estratégia de testes para a aplicação web incluirá:
 
-* **Testes Unitários:** Testar individualmente componentes, funções e módulos para garantir que cada parte isolada do código funcione corretamente. Ferramentas como Jest e React Testing Library podem ser utilizadas.
-* **Testes de Integração:** Verificar a interação entre diferentes componentes e módulos da aplicação, bem como a integração com serviços externos (como a API do backend).
-* **Testes End-to-End (E2E):** Simular o fluxo completo do usuário na aplicação, desde a interação com a interface até a resposta do backend. Ferramentas como Cypress ou Playwright podem ser utilizadas para automatizar esses testes.
-* **Testes de Interface do Usuário (UI):** Garantir que a interface seja renderizada corretamente em diferentes navegadores e dispositivos, e que os elementos visuais e interativos funcionem conforme o esperado.
-* **Testes de Responsividade:** Verificar se o layout da aplicação se adapta corretamente a diferentes tamanhos de tela.
-* **Testes de Acessibilidade:** Garantir que a aplicação seja acessível a usuários com deficiências, seguindo as diretrizes de acessibilidade web (WCAG).
+* **Testes Unitários:** Testar individualmente os componentes, hooks e funções para garantir que cada parte isolada do código funcione conforme o esperado (utilizando ferramentas como Jest e React Testing Library).
+* **Testes de Integração:** Verificar a correta interação entre diferentes componentes e a comunicação com a API do backend (também com Jest e React Testing Library ou ferramentas específicas para testar integrações com APIs).
+* **Testes End-to-End (E2E):** Simular fluxos de usuário completos na aplicação para garantir que a interface e o backend funcionem juntos corretamente (utilizando ferramentas como Cypress ou Playwright).
+* **Testes de Interface do Usuário (UI):** Garantir que a interface seja renderizada corretamente em diferentes navegadores e dispositivos, e que os elementos visuais e interativos funcionem como esperado.
+* **Testes de Responsividade:** Verificar se o layout da aplicação se adapta adequadamente a diferentes tamanhos de tela.
+* **Testes de Acessibilidade:** Avaliar a conformidade da aplicação com as diretrizes de acessibilidade web (WCAG) para garantir que seja utilizável por pessoas com deficiências.
 
-Serão criados casos de teste para cobrir todos os requisitos funcionais (por exemplo, cadastro de usuários, busca de livros, realização de empréstimos) e não funcionais (por exemplo, desempenho, segurança, usabilidade) da aplicação web. A automação dos testes será priorizada para garantir a qualidade e a eficiência do processo de desenvolvimento.
+Serão criados casos de teste detalhados para cobrir todos os requisitos funcionais e não funcionais da aplicação web. A automação dos testes será priorizada para garantir a eficiência e a qualidade do processo de desenvolvimento e manutenção.
 
 ## Referências
 
