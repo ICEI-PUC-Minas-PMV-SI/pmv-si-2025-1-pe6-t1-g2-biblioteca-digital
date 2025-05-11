@@ -1,28 +1,37 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+src/node_modules
+src/.pnp
+src/.pnp.js
 
 # testing
-/coverage
+src/coverage
 
 # database
-/prisma/db.sqlite
-/prisma/db.sqlite-journal
+src/prisma/db.sqlite
+src/prisma/db.sqlite-journal
 
 # macOS system files
 .DS_Store
 db.sqlite
 
 # next.js
-/.next/
-/out/
-next-env.d.ts
+src/.next/
+src/.next/fallback-build-manifest.json
+src/.next/server/
+src/.next/server/pages/
+src/.next/server/pages/api/
+src/.next/server/pages/api/trpc/
+src/.next/server/pages/api/trpc/[trpc]/route.ts
+src/.next/server/pages/api/trpc/[trpc]/route.ts
+src/.next/server/pages/api/trpc/[trpc]/route.ts
+
+      src/out/
+src/next-env.d.ts
 
 # production
-/build
+src/build
 
 # misc
 .DS_Store
