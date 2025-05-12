@@ -2,6 +2,8 @@
 
 O projeto da interface web é construído utilizando o T3 Stack, um conjunto de tecnologias modernas e eficientes para o desenvolvimento de aplicações web full-stack com foco em segurança de tipos e desenvolvimento rápido. A interface visa proporcionar uma experiência de usuário intuitiva e agradável para alunos, professores, bibliotecários e gestores no acesso às funcionalidades do sistema de gestão de bibliotecas.
 
+Link da aplicação hospedada: https://puc-lib-lyyc.vercel.app/emprestimos
+
 ## Projeto da Interface Web
 
 A interface web apresenta um design limpo e moderno, com uma barra de navegação superior que permite o acesso às seções principais: "Livros", "Alunos", "Empréstimos" e "Estatística". A aplicação é responsiva, adaptando-se a diferentes tamanhos de tela para garantir uma boa experiência em diversos dispositivos. As interações são intuitivas, com botões de ação primária destacados e formulários claros para a entrada de dados.
