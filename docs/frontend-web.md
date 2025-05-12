@@ -25,15 +25,19 @@ A interface web apresenta um design limpo e moderno, com uma barra de navegaçã
  
 Esse wireframe é classificado como de média complexidade (mid-fi) porque equilibra estrutura clara e dados realistas com elementos simplificados, como tabelas organizadas e informações plausíveis (ex: livros e alunos), mas não inclui detalhes visuais refinados, como cores, ícones específicos ou interações avançadas, mantendo o foco na funcionalidade básica sem chegar ao nível de um protótipo high-fi.
 
+**--------------------------------------------------------------------------------------------------**
       
 ![image](https://github.com/user-attachments/assets/19a9d3a3-3511-481f-924d-54e311194a85)
 
+**--------------------------------------------------------------------------------------------------**
 
 ![image](https://github.com/user-attachments/assets/5ad04e88-5885-461f-b765-96366cb987c5)
 
+**--------------------------------------------------------------------------------------------------**
 
 ![image](https://github.com/user-attachments/assets/b7c857fd-9b0a-446f-813d-4b22beef7701)
 
+**--------------------------------------------------------------------------------------------------**
 
 ![image](https://github.com/user-attachments/assets/e52523cc-c780-485d-bffa-5472a360bbaf)
 
@@ -114,7 +118,12 @@ A estratégia de testes para a aplicação web incluirá:
 
 Serão criados casos de teste detalhados para cobrir todos os requisitos funcionais e não funcionais da aplicação web. A automação dos testes será priorizada para garantir a eficiência e a qualidade do processo de desenvolvimento e manutenção.
 
-Link para nosso teste: 
+Link para os casos de teste: 
+
+
+ ![image](https://github.com/user-attachments/assets/cdee9ad5-4039-4308-a48c-1edca3dec82f)
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/commit/5d79b2bdbd2087547fc432c5466982600cff7bad#diff-4dcf42bb630007da0783795c4a362ddf12f4f7ec059189ed2b4ca317d9941015
 
 ## Referências
 
