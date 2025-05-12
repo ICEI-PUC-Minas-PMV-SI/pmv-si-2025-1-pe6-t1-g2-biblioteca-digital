@@ -21,17 +21,21 @@ A interface web apresenta um design limpo e moderno, com uma barra de navegaçã
     * Empréstimos por Mês (em um gráfico de linhas, mostrando a evolução dos empréstimos ao longo dos meses).
     * Livros Mais Emprestados (em um gráfico de barras, listando os livros com maior número de empréstimos).
     * Um resumo de dados geral da biblioteca.
+
  
+Esse wireframe é classificado como de média complexidade (mid-fi) porque equilibra estrutura clara e dados realistas com elementos simplificados, como tabelas organizadas e informações plausíveis (ex: livros e alunos), mas não inclui detalhes visuais refinados, como cores, ícones específicos ou interações avançadas, mantendo o foco na funcionalidade básica sem chegar ao nível de um protótipo high-fi.
+
       
 ![image](https://github.com/user-attachments/assets/19a9d3a3-3511-481f-924d-54e311194a85)
 
+
 ![image](https://github.com/user-attachments/assets/5ad04e88-5885-461f-b765-96366cb987c5)
+
 
 ![image](https://github.com/user-attachments/assets/b7c857fd-9b0a-446f-813d-4b22beef7701)
 
+
 ![image](https://github.com/user-attachments/assets/e52523cc-c780-485d-bffa-5472a360bbaf)
-
-
 
 
 
