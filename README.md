@@ -14,6 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Eric Henrique Marques dos Santos
 * Jeziel Suzana Pires da Silva
 * Júlio dos Reis Firmino
+* Matheus Cysneiros
 * Victor Hugo Carvalho de Almeida
 
 ## Orientador

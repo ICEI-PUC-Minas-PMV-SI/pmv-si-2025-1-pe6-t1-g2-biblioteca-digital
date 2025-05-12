@@ -1,59 +1,8 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
-
-## Projeto da Interface Web
-
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
-
-### Wireframes
-
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
-
-### Design Visual
-
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
-
-## Fluxo de Dados
-
-[Diagrama ou descrição do fluxo de dados na aplicação.]
-
-## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
-
-## Considerações de Segurança
-
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
-## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
-
-## Testes
-
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
-
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-
-
-# Front-end Web
-
 O projeto da interface web é construído utilizando o T3 Stack, um conjunto de tecnologias modernas e eficientes para o desenvolvimento de aplicações web full-stack com foco em segurança de tipos e desenvolvimento rápido. A interface visa proporcionar uma experiência de usuário intuitiva e agradável para alunos, professores, bibliotecários e gestores no acesso às funcionalidades do sistema de gestão de bibliotecas.
+
+Link da aplicação hospedada: https://puc-lib-lyyc.vercel.app/emprestimos
 
 ## Projeto da Interface Web
 
@@ -74,6 +23,27 @@ A interface web apresenta um design limpo e moderno, com uma barra de navegaçã
     * Empréstimos por Mês (em um gráfico de linhas, mostrando a evolução dos empréstimos ao longo dos meses).
     * Livros Mais Emprestados (em um gráfico de barras, listando os livros com maior número de empréstimos).
     * Um resumo de dados geral da biblioteca.
+
+ 
+Esse wireframe é classificado como de média complexidade (mid-fi) porque equilibra estrutura clara e dados realistas com elementos simplificados, como tabelas organizadas e informações plausíveis (ex: livros e alunos), mas não inclui detalhes visuais refinados, como cores, ícones específicos ou interações avançadas, mantendo o foco na funcionalidade básica sem chegar ao nível de um protótipo high-fi.
+
+**--------------------------------------------------------------------------------------------------**
+      
+![image](https://github.com/user-attachments/assets/19a9d3a3-3511-481f-924d-54e311194a85)
+
+**--------------------------------------------------------------------------------------------------**
+
+![image](https://github.com/user-attachments/assets/5ad04e88-5885-461f-b765-96366cb987c5)
+
+**--------------------------------------------------------------------------------------------------**
+
+![image](https://github.com/user-attachments/assets/b7c857fd-9b0a-446f-813d-4b22beef7701)
+
+**--------------------------------------------------------------------------------------------------**
+
+![image](https://github.com/user-attachments/assets/e52523cc-c780-485d-bffa-5472a360bbaf)
+
+
 
 ## Design Visual
 
@@ -102,12 +72,13 @@ O fluxo de dados na aplicação web envolve a interação do usuário com a inte
 
 As considerações de segurança para a aplicação web são essenciais para proteger os dados dos usuários e garantir a integridade do sistema:
 
-* **Autenticação:** Implementação de um sistema de autenticação seguro para verificar a identidade dos usuários antes de conceder acesso às funcionalidades protegidas. É provável o uso de tokens JWT para manter a sessão do usuário autenticada.
+* **Autenticação:** Implementação de um sistema de autenticação seguro para verificar a identidade dos usuários antes de conceder acesso às funcionalidades protegidas. É provável o uso de tokens JWT (JSON Web Token) para manter a sessão do usuário autenticada.
 * **Autorização:** Controle de acesso baseado em roles (alunos, bibliotecários, gestores) para garantir que cada usuário tenha permissão apenas para as funcionalidades e dados relevantes ao seu perfil.
 * **Proteção contra ataques comuns:**
     * **Cross-Site Scripting (XSS):** Medidas para prevenir a injeção de scripts maliciosos na interface, como a sanitização de dados fornecidos pelo usuário.
     * **Cross-Site Request Forgery (CSRF):** Implementação de tokens CSRF para proteger contra requisições não autorizadas em nome de usuários autenticados.
-    * **Clickjacking:** Estratégias para evitar que a interface seja嵌入 em frames maliciosos para enganar os usuários.
+    * **Clickjacking:** Estratégias para evitar que a interface seja em frames maliciosos para enganar os usuários.
+    * **Chamadas Server-Side:** protegidas contra ataques comuns (CSRF, injeção, etc.).
 * **Validação de dados:** Validação rigorosa dos dados de entrada no front-end antes de serem enviados para o backend, ajudando a prevenir erros e potenciais vulnerabilidades.
 * **Comunicação segura:** Utilização de HTTPS para criptografar todo o tráfego entre o navegador do usuário e o servidor, protegendo informações sensíveis durante a transmissão.
 
@@ -149,6 +120,16 @@ A estratégia de testes para a aplicação web incluirá:
 
 Serão criados casos de teste detalhados para cobrir todos os requisitos funcionais e não funcionais da aplicação web. A automação dos testes será priorizada para garantir a eficiência e a qualidade do processo de desenvolvimento e manutenção.
 
+Link para os casos de teste: 
+
+
+ ![image](https://github.com/user-attachments/assets/cdee9ad5-4039-4308-a48c-1edca3dec82f)
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t1-g2-biblioteca-digital/commit/5d79b2bdbd2087547fc432c5466982600cff7bad#diff-4dcf42bb630007da0783795c4a362ddf12f4f7ec059189ed2b4ca317d9941015
+
 ## Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://www.figma.com/pt-br/ai/
+https://create.t3.gg/
+https://nextjs.org/
+(https://tanstack.com/query/latest)
