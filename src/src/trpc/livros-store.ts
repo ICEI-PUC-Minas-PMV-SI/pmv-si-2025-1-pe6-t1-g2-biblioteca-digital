@@ -8,6 +8,7 @@ type LivroStore = {
   setLivros: (livros: LivroDadosResponse[]) => void;
   getLivroById: (id: number) => LivroDadosResponse | undefined;
   setBook: (id: string, book: LivroDadosResponse) => void;
+  updateLivro: (livro: LivroDadosResponse) => void;
 };
 
 export const useLivrosStore = create<LivroStore>((set, get) => ({
@@ -18,6 +19,11 @@ export const useLivrosStore = create<LivroStore>((set, get) => ({
   setBook: (id, book) => {
     set((state) => ({
       livros: [...state.livros, book]
+    }));
+  },
+  updateLivro: (livro) => {
+    set((state) => ({
+      livros: state.livros.map((l) => l.id === livro.id ? livro : l)
     }));
   }
 }));

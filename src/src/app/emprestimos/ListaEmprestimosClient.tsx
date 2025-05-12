@@ -16,6 +16,7 @@ export default function ListaEmprestimosClient() {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [confirmingReturn, setConfirmingReturn] = useState<number | null>(null);
   const authToken = useAuthStore.getState().getAccessToken();
+  const [book, setBook] = useState<string>("");
 
   // Buscar todos os empréstimos usando a query todosOsEmprestimos
   const emprestimosQuery = api.emprestimo.todosOsEmprestimos.useQuery(
@@ -101,11 +102,11 @@ export default function ListaEmprestimosClient() {
       setError("Erro de autenticação. Faça login novamente.");
       return;
     }
-    
+
     // Usamos o id como alias para tiragem para compatibilidade com a API
-    devolucaoMutation.mutate({ 
+    devolucaoMutation.mutate({
       id: tiragemparam, // passamos a tiragem como id para compatibilidade
-      authToken 
+      authToken,
     });
   };
 
@@ -151,18 +152,18 @@ export default function ListaEmprestimosClient() {
       {confirmingReturn && (
         <div className="mb-4 rounded-xl border border-yellow-200 bg-yellow-50 p-4 shadow-md">
           <p className="mb-3 text-yellow-800">
-            Confirmar devolução da tiragem #{confirmingReturn}?
+            Confirmar devolução do livro {book}?
           </p>
           <div className="flex space-x-2">
             <button
               onClick={() => handleReturnBook(confirmingReturn)}
-              className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="rounded-lg bg-blue-600 px-4 py-2 text-white transition-colors hover:bg-blue-700 hover:shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
             >
               Confirmar
             </button>
             <button
               onClick={() => setConfirmingReturn(null)}
-              className="rounded-lg bg-gray-200 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+              className="rounded-lg bg-gray-200 px-4 py-2 text-gray-700 transition-colors hover:bg-gray-300 hover:shadow-md focus:ring-2 focus:ring-gray-400 focus:outline-none"
             >
               Cancelar
             </button>
@@ -253,7 +254,10 @@ export default function ListaEmprestimosClient() {
               <td className="px-6 py-4 text-sm whitespace-nowrap">
                 {!emprestimo.dt_devolucao && (
                   <button
-                    onClick={() => setConfirmingReturn(emprestimo.tiragem)}
+                    onClick={() => {
+                      setConfirmingReturn(emprestimo.tiragem);
+                      setBook(emprestimo.titulo_livro);
+                    }}
                     className="rounded-md px-3 py-1 text-sm font-medium text-blue-600 transition-colors hover:bg-blue-50 hover:text-blue-800"
                     title="Registrar devolução"
                   >
