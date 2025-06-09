@@ -3,7 +3,7 @@
 Este projeto tem como objetivo o desenvolvimento da interface móvel de uma aplicação utilizando o framework React em conjunto com a plataforma Expo Dev, que facilita a criação, o teste e a publicação de apps para dispositivos Android e iOS. A aplicação busca proporcionar uma experiência de usuário fluida, moderna e responsiva, integrando-se facilmente com APIs e serviços backend.
 
 ## Projeto da Interface
-A interface móvel da aplicação foi desenvolvida visando garantir uma experiência de usuário moderna, responsiva e intuitiva. O design visual segue uma abordagem limpa e funcional, com foco na usabilidade e acessibilidade para diferentes perfis de usuários, como alunos, professores, bibliotecários e gestores. As páginas do aplicativo foram organizadas de forma lógica e fluida, com telas específicas para login, buscar livros, meus empréstimos, reservar um livro, histórico de empréstimos. Foram utilizadas bibliotecas de componentes visuais que seguem os padrões do Material Design, garantindo familiaridade e consistência na navegação. As interações foram pensadas para serem simples e eficientes, reduzindo a curva de aprendizado e otimizando a realização de tarefas. O uso da Expo Dev permitiu acelerar o processo de desenvolvimento, facilitando testes em dispositivos reais e garantindo compatibilidade com o sistema operacional Android, além de possibilitar futura expansão para iOS, caso necessário.
+A interface móvel da aplicação foi desenvolvida visando garantir uma experiência de usuário moderna, responsiva e intuitiva. O design visual segue uma abordagem limpa e funcional, com foco na usabilidade e acessibilidade para diferentes perfis de usuários, como alunos, professores, bibliotecários e gestores. As páginas do aplicativo foram organizadas de forma lógica e fluida, com telas específicas para login, buscar livros, meus empréstimos, reservar um livro e histórico de empréstimos. Foram utilizadas bibliotecas de componentes visuais que seguem os padrões do Material Design, garantindo familiaridade e consistência na navegação. As interações foram pensadas para serem simples e eficientes, reduzindo a curva de aprendizado e otimizando a realização de tarefas. O uso da Expo Dev permitiu acelerar o processo de desenvolvimento, facilitando testes em dispositivos reais e garantindo compatibilidade com o sistema operacional Android, além de possibilitar futura expansão para iOS, caso necessário.
 
 ### Wireframes
 
@@ -31,25 +31,15 @@ Em conjunto, esses elementos visuais garantem uma interface coesa, acessível e 
 
 ## Tecnologias Utilizadas
 
-## ⚛️ *Framework React*  
+⚛️ *Framework React*  
 Biblioteca JavaScript utilizada para construir interfaces de usuário de forma declarativa e baseada em componentes.
 
-## 📱 *Plataforma Expo Dev*  
+📱 *Plataforma Expo Dev*  
 Conjunto de ferramentas e serviços que facilita o desenvolvimento de apps React Native sem necessidade de configuração nativa.
 
 ## Considerações de Segurança
 
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
-## Implantação
-
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
 ## Testes
 
