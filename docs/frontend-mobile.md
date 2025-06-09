@@ -1,9 +1,9 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+Este projeto tem como objetivo o desenvolvimento da interface móvel de uma aplicação utilizando o framework React em conjunto com a plataforma Expo Dev, que facilita a criação, o teste e a publicação de apps para dispositivos Android e iOS. A aplicação busca proporcionar uma experiência de usuário fluida, moderna e responsiva, integrando-se facilmente com APIs e serviços backend.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+A interface móvel da aplicação foi desenvolvida visando garantir uma experiência de usuário moderna, responsiva e intuitiva. O design visual segue uma abordagem limpa e funcional, com foco na usabilidade e acessibilidade para diferentes perfis de usuários, como alunos, professores, bibliotecários e gestores. As páginas do aplicativo foram organizadas de forma lógica e fluida, com telas específicas para login, buscar livros, meus empréstimos, reservar um livro, histórico de empréstimos. Foram utilizadas bibliotecas de componentes visuais que seguem os padrões do Material Design, garantindo familiaridade e consistência na navegação. As interações foram pensadas para serem simples e eficientes, reduzindo a curva de aprendizado e otimizando a realização de tarefas. O uso da Expo Dev permitiu acelerar o processo de desenvolvimento, facilitando testes em dispositivos reais e garantindo compatibilidade com o sistema operacional Android, além de possibilitar futura expansão para iOS, caso necessário.
 
 ### Wireframes
 
@@ -11,7 +11,19 @@
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+A aplicação móvel foi desenvolvida com foco em um design limpo, moderno e funcional, buscando oferecer uma experiência de uso intuitiva e agradável.
+
+A paleta de cores utiliza predominantemente o roxo escuro, aplicado na barra de navegação superior e nos botões principais, conferindo um aspecto elegante e profissional. O fundo em azul claro proporciona um contraste suave com os demais elementos, contribuindo para o conforto visual. O botão "SAIR" utiliza a cor vermelha, destacando essa ação importante. Já o branco é utilizado em cartões e campos de entrada, garantindo legibilidade e organização clara das informações.
+
+A tipografia é sem serifa, com ótima legibilidade em dispositivos móveis. Os textos apresentam variações de peso, com títulos e seções em negrito, facilitando a identificação das informações mais relevantes.
+
+Ícones simples e intuitivos acompanham cada funcionalidade, como buscar livros, visualizar empréstimos, fazer reservas e acessar o histórico. Esses ícones seguem o estilo flat e monocromático, contribuindo para um visual uniforme e de fácil compreensão.
+
+Os elementos gráficos incluem cartões com cantos arredondados e sombreamento sutil, que apresentam as informações de forma organizada e agradável. Os botões são grandes, com espaçamento adequado, facilitando a navegação por meio de toques, especialmente em dispositivos móveis.
+
+O layout adota uma estrutura vertical clara e objetiva, permitindo que o usuário acesse todas as funcionalidades com poucos toques. A barra superior fixa contribui para a navegação consistente entre as diferentes telas da aplicação.
+
+Em conjunto, esses elementos visuais garantem uma interface coesa, acessível e visualmente atraente, priorizando a usabilidade e a experiência do usuário final.
 
 ## Fluxo de Dados
 
@@ -19,7 +31,11 @@
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+## ⚛️ *Framework React*  
+Biblioteca JavaScript utilizada para construir interfaces de usuário de forma declarativa e baseada em componentes.
+
+## 📱 *Plataforma Expo Dev*  
+Conjunto de ferramentas e serviços que facilita o desenvolvimento de apps React Native sem necessidade de configuração nativa.
 
 ## Considerações de Segurança
 
@@ -45,6 +61,3 @@
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
-# Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
