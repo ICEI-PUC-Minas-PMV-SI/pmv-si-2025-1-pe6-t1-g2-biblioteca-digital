@@ -6,8 +6,12 @@ Este projeto tem como objetivo o desenvolvimento da interface móvel de uma apli
 A interface móvel da aplicação foi desenvolvida visando garantir uma experiência de usuário moderna, responsiva e intuitiva. O design visual segue uma abordagem limpa e funcional, com foco na usabilidade e acessibilidade para diferentes perfis de usuários, como alunos, professores, bibliotecários e gestores. As páginas do aplicativo foram organizadas de forma lógica e fluida, com telas específicas para login, buscar livros, meus empréstimos, reservar um livro e histórico de empréstimos. Foram utilizadas bibliotecas de componentes visuais que seguem os padrões do Material Design, garantindo familiaridade e consistência na navegação. As interações foram pensadas para serem simples e eficientes, reduzindo a curva de aprendizado e otimizando a realização de tarefas. O uso da Expo Dev permitiu acelerar o processo de desenvolvimento, facilitando testes em dispositivos reais e garantindo compatibilidade com o sistema operacional Android, além de possibilitar futura expansão para iOS, caso necessário.
 
 ### Wireframes
-
-![image](docs/img/tela de login mobile.png)
+<img src="https://github.com/user-attachments/assets/efa0f38c-6b8d-4e79-9e62-3b345cc1b362" width="350" height="600">
+<img src="https://github.com/user-attachments/assets/0e7946c8-d5ee-40f2-b103-011bc992f610" width="350" height="600">
+<img src="https://github.com/user-attachments/assets/5a517dba-c132-4405-9a63-0fd537134b1f" width="350" height="600">
+<img src="https://github.com/user-attachments/assets/8a6c0503-35c1-43bd-8ebc-ef40541b2058" width="350" height="600">
+<img src="https://github.com/user-attachments/assets/9cb68f45-f8f5-4e17-83cf-f46b9a5a5f52" width="350" height="600">
+<img src="https://github.com/user-attachments/assets/0c45135d-8f90-45dd-93e4-236ba450f7dc" width="350" height="600">
 
 ### Design Visual
 
