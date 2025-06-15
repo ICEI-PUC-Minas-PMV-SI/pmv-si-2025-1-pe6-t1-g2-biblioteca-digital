@@ -31,19 +31,29 @@ Em conjunto, esses elementos visuais garantem uma interface coesa, acessível e 
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+A aplicação segue um fluxo de dados baseado em requisições HTTP à API REST hospedada em uma instância EC2. O fluxo básico envolve:
+
+1. **Login do Usuário**: O usuário insere suas credenciais, que são enviadas via POST para o endpoint `/api/token/`, retornando um token JWT.
+2. **Autenticação e Armazenamento**: O token é armazenado localmente e incluído nos headers das requisições subsequentes.
+3. **Busca de Livros**: A tela de busca envia requisições GET para o endpoint `/api/v1/livros/` e exibe os resultados de forma dinâmica.
+4. **Reservas e Empréstimos**: A reserva de um exemplar é feita por meio de POST para `/api/v1/reservas/`, e os empréstimos são consultados via GET em `/api/v1/emprestimos/usuario/`.
+
+O gerenciamento de estado e autenticação é realizado via Context API do React.
 
 ## Tecnologias Utilizadas
 
 ⚛️ *Framework React*  
-Biblioteca JavaScript utilizada para construir interfaces de usuário de forma declarativa e baseada em componentes.
+Framework principal utilizado para o desenvolvimento da interface móvel, baseado em React. Permite a criação de apps nativos para Android e iOS com uma única base de código.
 
 📱 *Plataforma Expo Dev*  
-Conjunto de ferramentas e serviços que facilita o desenvolvimento de apps React Native sem necessidade de configuração nativa.
+Plataforma que facilita o desenvolvimento, execução e build de apps React Native. Usada para testes rápidos em dispositivos físicos, sem necessidade de configuração nativa (Xcode/Android Studio).
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+- **Autenticação baseada em JWT**: As requisições à API utilizam token JWT no header `Authorization`, garantindo que apenas usuários autenticados tenham acesso.
+- **Armazenamento seguro**: Tokens são armazenados localmente de forma segura, evitando exposição em logs ou cache de terceiros.
+- **Proteção contra ações não autorizadas**: A API valida o escopo do usuário autenticado, impedindo ações como reserva ou acesso ao histórico de outros usuários.
+- **Validações no frontend**: Foram implementadas validações nos formulários de entrada para evitar inputs maliciosos (ex: SQL injection ou XSS).
 
 ## Testes
 
