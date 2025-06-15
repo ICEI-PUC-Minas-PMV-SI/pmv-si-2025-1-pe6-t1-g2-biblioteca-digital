@@ -57,6 +57,12 @@ Plataforma que facilita o desenvolvimento, execução e build de apps React Nati
 
 ## Testes
 
+## Código testes
+
+![image](https://github.com/user-attachments/assets/3a2bdb04-75b9-438b-9f8f-4808f8b345d1)
+
+
+
 # Estratégia de Testes - Biblioteca Digital
 
 ## 1. Técnicas de Teste Utilizadas
